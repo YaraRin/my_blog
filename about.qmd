@@ -1,0 +1,20 @@
+---
+title: "Archive / 档案"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/YaraRin
+    - icon: microsoft
+      text: Outlook
+      href: mailto:GreenwichintheSky@outlook.com
+    - icon: xbox
+      text: Xbox
+      href: https://www.xbox.com/zh-CN/play/user/Yaraxbox # 记得换成你的Xbox ID
+---
+
+“再看看那个光点。那是家，那是我们。” —— 卡尔·萨根《暗淡蓝点》
+
+这里是我的业余记录空间。

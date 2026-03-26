@@ -1,0 +1,11 @@
+---
+title: "PALE BLUE DOT"
+subtitle: "“The Earth is a very small stage in a vast cosmic arena.”"
+listing:
+  contents: posts
+---
+
+> 这里是我的“暗淡蓝点”。
+
+---
+
