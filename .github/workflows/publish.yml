@@ -4,13 +4,15 @@ on:
   push:
     branches: [ main ]
 
+# 给 Actions 授予发布 Pages 的核心权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -18,9 +20,17 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      # 这一步只负责渲染，不负责推送分支
+      - name: Render Quarto
+        uses: quarto-dev/quarto-actions/render@v2
+
+      # 这一步将渲染好的 _site 文件夹上传为临时文件
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: _site
+
+      # 这一步直接把临时文件部署到 Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
