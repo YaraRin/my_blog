@@ -4,6 +4,7 @@ project:
 
 website:
   title: "A Small Stage" # 引用自萨根：A very small stage in a vast cosmic arena.
+  site-url: "https://YaraRin.github.io"
   description: "法律、物理与游戏代码之间的非线性碰撞。"
   
   # 导航栏配置：左侧逻辑分类，右侧联系方式
@@ -24,10 +25,6 @@ website:
       - icon: envelope
         text: "Contact"
         href: GreenwichintheSky@outlook.com # 请手动修改为你的 Outlook 
-      - icon: github
-        href: https://github.com/YaraRin # 你的 Godot 项目托管地
-      - icon: xbox
-        href: https://www.xbox.com/zh-CN/play/YaraXbox
 
 # 全球化配置：Men's Fudge 审美 + 学术考据排版
 format:

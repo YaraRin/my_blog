@@ -9,6 +9,9 @@
     "posts\\post-with-code\\index.qmd": [
       "../../posts"
     ],
+    "posts\\research\\elsword_clamor_analysis\\index.qmd": [
+      "../../../posts"
+    ],
     "posts\\welcome\\index.qmd": [
       "../../posts"
     ]

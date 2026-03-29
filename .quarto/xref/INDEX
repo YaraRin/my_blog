@@ -10,5 +10,11 @@
   },
   "posts/welcome/index.qmd": {
     "index.html": "d5ad18fe"
+  },
+  "posts/research/elsword_clamor_analysis/index.md": {
+    "index.html": "40fece78"
+  },
+  "posts/research/elsword_clamor_analysis/index.qmd": {
+    "index.html": "d226f81d"
   }
 }
