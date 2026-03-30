@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>A Small Stage</title>
+<link>https://YaraRin.github.io/posts/post-with-code/</link>
+<atom:link href="https://YaraRin.github.io/posts/post-with-code/index.xml" rel="self" type="application/rss+xml"/>
+<description>法律、物理与游戏代码之间的非线性碰撞。</description>
+<image>
+<url>https://YaraRin.github.io/image.jpg</url>
+<title>A Small Stage</title>
+<link>https://YaraRin.github.io/posts/post-with-code/</link>
+</image>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Mon, 30 Mar 2026 11:50:11 GMT</lastBuildDate>
+</channel>
+</rss>
