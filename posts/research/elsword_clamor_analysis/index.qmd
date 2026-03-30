@@ -1,6 +1,5 @@
 ---
 title: "从俄耳甫斯到赫耳墨斯：Elsword角色的神学设计图谱(Noah&Clamor)"
-title-block-banner: "images/Ground.png" 
 title-block-banner-color: "black"
 author: "Els_Backup"
 date: "2026-03-26"
