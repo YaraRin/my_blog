@@ -12,10 +12,6 @@ format:
     number-sections: true
     mainfont: "Segoe UI"
     embed-resources: true
-  pdf:
-    toc: true
-    number-sections: true
-    mainfont: "SimSun"
 ---
 # 从俄耳甫斯到赫耳墨斯：Elsword角色的神学设计图谱（Noah&Clamor）
 
