@@ -11,7 +11,11 @@ format:
     toc-location: left
     number-sections: true
     mainfont: "Segoe UI"
-    embed-resources: true # 重点：这会将图片直接编码进 HTML，解决路径断裂问题
+    embed-resources: true
+  pdf:
+    toc: true
+    number-sections: true
+    mainfont: "SimSun"
 ---
 # 从俄耳甫斯到赫耳墨斯：Elsword角色的神学设计图谱（Noah&Clamor）
 

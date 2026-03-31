@@ -24,7 +24,7 @@ website:
     right:
       - icon: envelope
         text: "Contact"
-        href: GreenwichintheSky@outlook.com # 请手动修改为你的 Outlook 
+        href: mailto:GreenwichintheSky@outlook.com # 请手动修改为你的 Outlook 
 
 # 全球化配置：Men's Fudge 审美 + 学术考据排版
 format:
