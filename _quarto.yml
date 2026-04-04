@@ -48,7 +48,7 @@ format:
         category-id: DIC_kwDORxBgz84C5_8x
         mapping: pathname
         reactions-enabled: true
-        theme: preferred_color_scheme
+        theme: light
         language: zh-CN
 
 # 博客列表页配置
