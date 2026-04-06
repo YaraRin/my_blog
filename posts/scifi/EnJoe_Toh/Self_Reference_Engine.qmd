@@ -1,0 +1,28 @@
+---
+title: "圆城塔的散文随笔"
+title-block-banner-color: "black"
+author: "此岸归空"
+date: "2026-04-06"
+categories: [Scifi]
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    number-sections: true
+    mainfont: "Segoe UI"
+    embed-resources: true
+
+---
+# 圆城塔的自指引擎
+
+
+---
+## 第一部
+
+有点意外，看的时候发现Bullet这一章圆城塔好像玩了圣菲研究所的梗。当时不太确定，就去看了英版，结果还真是圣菲研究所啊。
+![詹姆竟然去了圣塔菲哈哈哈，没想到会看到复杂系统的梗](images/Bullet_SIF.jpg){#fig_SIF}
+
+![还真是圣塔菲，圆城塔好幽默](images/Bullet_SIFEN.jpg){#fig_SIFEN}
+
+这本书读着有种圆城塔写散文的感觉，看起来应该是小圈子的玩梗幽默向的，不知道为啥出圈了……这么一看有点不幸了。等边看边记好了。
