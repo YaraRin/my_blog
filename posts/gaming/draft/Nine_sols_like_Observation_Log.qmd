@@ -55,25 +55,47 @@ format:
 
 ## 🟢 Phase 01: Initial Displacement
 
-::: {.log-container}<div class="stage-direction">
-(暗転。廊下へ。クラモールは辺りを見渡す) 
-</div><div class="japanese-dialogue">Clamor: 「ここは……私の研究室ではないな」 
-</div>::: {.system-log}
-[INTERNAL_LOG]: Fatigue-induced rest interrupted. High-speed spatial displacement confirmed. Current environment: Unknown Corridor. 
-:::<div class="stage-direction">
-(少し探り、愕然とする) 
-</div><div class="japanese-dialogue">Clamor: 「魔力が……封じられているのか？」 
-</div>::: {.system-log}
-[STATUS_REPORT]: Magic circuit status: LOCKED. Ability restriction active. High probability of external interference. Situation: CRITICAL. 
-:::<div class="stage-direction">
-(遠くでタロットカードが光り、移動を始める) 
-</div><div class="japanese-dialogue">Clamor: 「……私を導いているのか？　チッ、他に選択肢はなさそうだな」 
+::: {.log-container}
 
-Clamor: 「……だが、この魔力の感触、どこか聞き覚えがある」 
-</div>::: {.system-log}
-[TRACE_SCAN]: Mana signature detected. Resonance: Familiar. Origin: Pending analysis... 
+<div class="stage-direction">
+(暗転。廊下へ。クラモールは辺りを見渡す)
+</div>
+
+<div class="japanese-dialogue">
+Clamor: 「ここは……私の研究室ではないな」
+</div>
+
+::: {.system-log}
+[INTERNAL_LOG]: Fatigue-induced rest interrupted. High-speed spatial displacement confirmed. Current environment: Unknown Corridor.
 :::
-::
+
+<div class="stage-direction">
+(少し探り、愕然とする)
+</div>
+
+<div class="japanese-dialogue">
+Clamor: 「魔力が……封じられているのか？」
+</div>
+
+::: {.system-log}
+[STATUS_REPORT]: Magic circuit status: LOCKED. Ability restriction active. High probability of external interference. Situation: CRITICAL.
+:::
+
+<div class="stage-direction">
+(遠くでタロットカードが光り、移動を始める)
+</div>
+
+<div class="japanese-dialogue">
+Clamor: 「……私を導いているのか？　チッ、他に選択肢はなさそうだな」
+
+Clamor: 「……だが、この魔力の感触、どこか聞き覚えがある」
+</div>
+
+::: {.system-log}
+[TRACE_SCAN]: Mana signature detected. Resonance: Familiar. Origin: Pending analysis...
+:::
+
+:::
 
 ## 🔵 Phase 02: The Child of Paradox(悖論の子供)
 
@@ -140,6 +162,7 @@ Clamor: 「どうやら、進み続けるしかなさそうだな」
 ::: {.system-log}
 [SPATIAL_ANOMALY]: Subject disappeared. Path expansion detected. Estimated route length: Non-linear.
 :::
+
 :::
 
 ## 🔴 Phase 03: The Entwined Memory (絡み合う記憶)
@@ -147,64 +170,80 @@ Clamor: 「どうやら、進み続けるしかなさそうだな」
 ::: {.log-container}
 
 <div class="stage-direction">
-(クラモールはしばらく歩く。廊下の突き当たりで、突如として光が白く染まる。クラモールは足を止める) </div>
+(クラモールはしばらく歩く。廊下の突き当たりで、突如として光が白く染まる。クラモールは足を止める)
+</div>
 
 ::: {.system-log}
 [VISUAL_DATA_OVERLOAD]: High-intensity light detected. Sensory input: Saturated.
-[EVENT_TRIGGER]: Memory fragment sequence initiated. :::
+[EVENT_TRIGGER]: Memory fragment sequence initiated.
+:::
 
 <div class="stage-direction">
-(幻影一：窓辺に座るノアとハルク。ハルクがノアの頭に手を置いている。ハルクが振り向くが、その顔はぼやけていて判別できない) 
+(幻影一：窓辺に座るノアとハルク。ハルクがノアの頭に手を置いている。ハルクが振り向くが、その顔はぼやけていて判別できない)
 
-(幻影二：同じ窓辺。ハルクの姿は消えている。ノアは一人で座り、何かを握りしめている。泣いてはいない) 
+(幻影二：同じ窓辺。ハルクの姿は消えている。ノアは一人で座り、何かを握りしめている。泣いてはいない)
 
-(幻影三：同じ窓辺。座っている人物が入れ替わっている。ノアが寄り添い、「お兄ちゃん」と呼びかける) </div>
+(幻影三：同じ窓辺。座っている人物が入れ替わっている。ノアが寄り添い、「お兄ちゃん」と呼びかける)
+</div>
 
 <div class="japanese-dialogue">
-Clamor: 「私……だと？」 </div>
+Clamor: 「私……だと？」
+</div>
 
 ::: {.system-log}
 [IDENTITY_ANOMALY]: Visual recognition failed. Subject has projected Observer's identity into a pre-existing memory slot.
-[HYPOTHESIS]: Not a simple projection. Conclusion: "Crystallization of Memory" (記憶の凝結). :::
+[HYPOTHESIS]: Not a simple projection. Conclusion: "Crystallization of Memory" (記憶の凝結).
+:::
 
 <div class="japanese-dialogue">
-Clamor: 「この静寂の違和感は……彼の記憶の齟齬によるものか？」 </div>
+Clamor: 「この静寂の違和感は……彼の記憶の齟齬によるものか？」
+</div>
 
 <div class="stage-direction">
-(モルフェウスが廊下の反対側から歩いてくる) </div>
+(モルフェウスが廊下の反対側から歩いてくる)
+</div>
 
 <div class="japanese-dialogue">
-Morpheus: 「お兄ちゃん、何でここに立ち止まってるの？ 一人で行かせちゃうの？」 
+Morpheus: 「お兄ちゃん、何でここに立ち止まってるの？ 一人で行かせちゃうの？」
 
-Clamor: 「……君、私のことを何て呼んだ？」 
+Clamor: 「……君、私のことを何て呼んだ？」
 
-Morpheus: 「お兄ちゃんだよ。当たり前じゃない」 </div>
+Morpheus: 「お兄ちゃんだよ。当たり前じゃない」
+</div>
 
 ::: {.system-log}
 [LOGIC_ADAPTATION]: Subject shows zero cognitive dissonance. In his cognition, Observer = "Brother."
-[OPPORTUNITY_ASSESSMENT]: Potential exit strategy: Utilize current role for domain release. :::
+[OPPORTUNITY_ASSESSMENT]: Potential exit strategy: Utilize current role for domain release.
+:::
 
 <div class="japanese-dialogue">
-Clamor: 「……練習に行かせてくれないか？ もう、あまり時間がないんだ」 
+Clamor: 「……練習に行かせてくれないか？ もう、あまり時間がないんだ」
 
-Morpheus: 「……時間？」 </div>
+Morpheus: 「……時間？」
+</div>
 
 <div class="stage-direction">
-(モルフェウスの笑みがわずかに消える。沈黙) </div>
+(モルフェウスの笑みがわずかに消える。沈黙)
+</div>
 
 <div class="japanese-dialogue">
-Morpheus: 「時間って何？ お兄ちゃんと僕の見え方は、きっと違うんだね」 
+Morpheus: 「時間って何？ お兄ちゃんと僕の見え方は、きっと違うんだね」
 
-Morpheus: 「同じ歳月でも、お兄ちゃんの時間と僕の時間は、流れ方が違うでしょ？」 </div>
+Morpheus: 「同じ歳月でも、お兄ちゃんの時間と僕の時間は、流れ方が違うでしょ？」
+</div>
 
 ::: {.system-log}
-[TEMPORAL_ERROR]: Subject's perception of time flow: DIVERGENT. Environment stability decreasing. :::
+[TEMPORAL_ERROR]: Subject's perception of time flow: DIVERGENT. Environment stability decreasing.
+:::
 
 <div class="stage-direction">
-(モルフェウスが消え去る。廊下の灯りが一段階暗くなる) </div>
+(モルフェウスが消え去る。廊下の灯りが一段階暗くなる)
+</div>
 
 <div class="japanese-dialogue">
-Clamor: 「……随分と独り善がりな子だな。この、折れ曲がった屋敷と同じように」 </div>
+Clamor: 「……随分と独り善がりな子だな。この、折れ曲がった屋敷と同じように」
+</div>
+
 :::
 
 ## 🟣 Phase 04: The Future Memory (未生流転)
@@ -212,20 +251,26 @@ Clamor: 「……随分と独り善がりな子だな。この、折れ曲がっ
 ::: {.log-container}
 
 <div class="stage-direction">
-(クラモールは再び歩みを進める。光が白く染まる) (幻影：どこかに立つノア。周囲の光景が重なり始める——同じ道を二度通っている) </div>
+(クラモールは再び歩みを進める。光が白く染まる)
+
+(幻影：どこかに立つノア。周囲の光景が重なり始める——同じ道を二度通っている)
+</div>
 
 <div class="japanese-dialogue">
-Morpheus: 「……また、ここだ」 </div>
+Morpheus: 「……また、ここだ」
+</div>
 
 <div class="stage-direction">
-(彼は自分の手を見下ろす。手はかすかに震えている) </div>
+(彼は自分の手を見下ろす。手はかすかに震えている)
+</div>
 
 <div class="japanese-dialogue">
-Morpheus: 「次に何が起きるか分かっているのに。それなのに、どうして——」 
+Morpheus: 「次に何が起きるか分かっているのに。それなのに、どうして——」
 
-Clamor: 「……現実に着地した夢のようだ。正確には、感情と記憶を充填剤とし、魔力の形式で構築された空間か」 
+Clamor: 「……現実に着地した夢のようだ。正確には、感情と記憶を充填剤とし、魔力の形式で構築された空間か」
 
-Clamor: 「手法そのものは間違っていないが、正しい導きが必要だ。この子の師は、一体どうして暴走を許したんだ？」 </div>
+Clamor: 「手法そのものは間違っていないが、正しい導きが必要だ。この子の師は、一体どうして暴走を許したんだ？」
+</div>
 
 ::: {.system-log}
 [ANALYSIS]: Spatial architecture: Emotional/Mnemonic synthesis. Mana-based construct. Structural integrity: VOLATILE.
@@ -233,59 +278,72 @@ Clamor: 「手法そのものは間違っていないが、正しい導きが必
 :::
 
 <div class="stage-direction">
-(画面が砕ける。クラモールが数歩進むと、そこには以前とは違う姿のモルフェウスがいる。二職の姿だ) </div>
+(画面が砕ける。クラモールが数歩進むと、そこには以前とは違う姿のモルフェウスがいる。二職の姿だ)
+</div>
 
 <div class="japanese-dialogue">
-Morpheus: 「今……悪夢を見ていたんだ……」 
+Morpheus: 「今……悪夢を見ていたんだ……」
 
-Clamor: 「君は今も、夢の中にいるように見えるが」 
+Clamor: 「君は今も、夢の中にいるように見えるが」
 
 Morpheus: 「夢……夢の中で、すごく嫌なことが起きたんだ。上手くいっていると思っていたのに、本当はそうじゃなかった」
 
-Morpheus: 「いや……本当は、見て見ぬ振りをしていただけなんだ」 
+Morpheus: 「いや……本当は、見て見ぬ振りをしていただけなんだ」
 
-Morpheus: 「最初はほんの小さな欠片で、大丈夫だと思っていた。なのに、いつの間にか全部に広がって……」 
+Morpheus: 「最初はほんの小さな欠片で、大丈夫だと思っていた。なのに、いつの間にか全部に広がって……」
 
-Morpheus: 「傷口が炎症を起こして、腐って、かさぶたになって」 
+Morpheus: 「傷口が炎症を起こして、腐って、かさぶたになって」
 
-Morpheus: 「誰にも気づかれないように、傷口が何度も現れるから、ずっと掻きむしるしかなかったんだ」 
+Morpheus: 「誰にも気づかれないように、傷口が何度も現れるから、ずっと掻きむしるしかなかったんだ」
 
-Morpheus: 「ずっと、ずっと、ずっと、ずっと……」 
+Morpheus: 「ずっと、ずっと、ずっと、ずっと……」
 
-Clamor: 「落ち着け。見てごらん、傷なんてどこにもない」 
+Clamor: 「落ち着け。見てごらん、傷なんてどこにもない」
 
-Clamor: 「ここは君自身の……家だろう？」 
+Clamor: 「ここは君自身の……家だろう？」
 
-Morpheus: 「あ……そうだよ！ 不安な感情を魔法で整えて変換する……それは、クラモール、君が教えてくれた方法じゃないか」 </div>
+Morpheus: 「あ……そうだよ！ 不安な感情を魔法で整えて変換する……それは、クラモール、君が教えてくれた方法じゃないか」
+</div>
 
 ::: {.system-log}
 [SYSTEM_ALERT]: Identity Recognition shift. Subject addressed Observer as "Clamor."
-[CRITICAL_LOGIC_ERROR]: Subject claims to have received instruction from Observer. No historical record of this event exists in Observer's memory. :::
+[CRITICAL_LOGIC_ERROR]: Subject claims to have received instruction from Observer. No historical record of this event exists in Observer's memory.
+:::
 
 <div class="japanese-dialogue">
-Clamor: 「……何だと？」 Clamor: 「私がいつ、そんなことを教えた？」 Morpheus: 「君だよ、クラモール。不安な感情は放っておけば自分を蝕む、そう言ったじゃないか」 </div>
+Clamor: 「……何だと？」
+
+Clamor: 「私がいつ、そんなことを教えた？」
+
+Morpheus: 「君だよ、クラモール。不安な感情は放っておけば自分を蝕む、そう言ったじゃないか」
+</div>
 
 ::: {.system-log}
 [TEMPORAL_PARADOX_DETECTED]: Memory retrieved by Subject does not exist in Observer's timeline.
-[CONCLUSION]: A memory of a future not yet occurred (未生の記憶). :::
+[CONCLUSION]: A memory of a future not yet occurred (未生の記憶).
+:::
 
 <div class="japanese-dialogue">
-Morpheus: 「……待って」 
+Morpheus: 「……待って」
 
-Morpheus: 「君は今、ここにいる。でも、君はここにいちゃいけないはずだ」 
+Morpheus: 「君は今、ここにいる。でも、君はここにいちゃいけないはずだ」
 
-Morpheus: 「これは夢なのか、それとも……」 </div>
+Morpheus: 「これは夢なのか、それとも……」
+</div>
 
 <div class="stage-direction">
-(モルフェウスが消失。灯りがさらに暗くなる) </div>
+(モルフェウスが消失。灯りがさらに暗くなる)
+</div>
 
 ::: {.system-log}
 [OBSERVATION]: Subject has begun to notice the anomaly.
-[MISDIRECTION]: Subject is not questioning the dream itself, but the "validity" of the Observer's existence. Risk of domain collapse increasing. :::
+[MISDIRECTION]: Subject is not questioning the dream itself, but the "validity" of the Observer's existence. Risk of domain collapse increasing.
 :::
 
+:::
 
 ## 🔴 Phase 05: The Recursion of Failure (再帰する失敗)
+
 ::: {.log-container}
 
 <div class="stage-direction">
@@ -364,70 +422,85 @@ Morpheus: 「お願い……お願い……お願いだから……っ！」
 [BEHAVIOR_ANALYSIS]: Extreme self-loathing. Desire for physical punishment as a means of atonement.
 [SYSTEM_WARNING]: Emotional domain collapsing. Spatial compression imminent.
 :::
+
 :::
+
 ## 🔵 Phase 06: The Observer's Sanctuary (観測者の聖域)
+
 ::: {.log-container}
 
 <div class="stage-direction">
-(空間の収縮が始まる。クラモールは領域の壁を打ち破るべく、数回の打撃を叩き込む。衝撃と共に景色が変転し、モルフェウスは三職の姿へと変貌。高笑いを残して消失する。再び現れたタロットカードの導きに従い、クラモールは歪んだ回廊を駆け抜ける) </div>
+(空間の収縮が始まる。クラモールは領域の壁を打ち破るべく、数回の打撃を叩き込む。衝撃と共に景色が変転し、モルフェウスは三職の姿へと変貌。高笑いを残して消失する。再び現れたタロットカードの導きに従い、クラモールは歪んだ回廊を駆け抜ける)
+</div>
 
 ::: {.system-log}
 [CRITICAL_EVENT]: Spatial compression detected. Domain structural collapse initialized.
-[TRANSITION]: Moving to sub-domain "Seven Towers (Pseudo)". Magic interference: Reduced. :::
+[TRANSITION]: Moving to sub-domain "Seven Towers (Pseudo)". Magic interference: Reduced.
+:::
 
 <div class="stage-direction">
-(シーン転換、セブンタワー。セレスティアがどこかに腰掛け、クラモールの出現を待っていた) </div>
+(シーン転換、セブンタワー。セレスティアがどこかに腰掛け、クラモールの出現を待っていた)
+</div>
 
 <div class="japanese-dialogue">
-Celestia: 「おや、お目覚めかい。予想していたより少し早かったね」 </div>
+Celestia: 「おや、お目覚めかい。予想していたより少し早かったね」
+</div>
 
 ::: {.system-log}
 [ANALYSIS]: Environment resembles the Seven Towers, yet thermal signatures match the previously encountered Tarot card.
-[LOGIC_TRACE]: Unknown entity detected. Appearance correlates with "Noah" phenotype. :::
+[LOGIC_TRACE]: Unknown entity detected. Appearance correlates with "Noah" phenotype.
+:::
 
 <div class="japanese-dialogue">
-Clamor: 「君は……誰だ？」 
+Clamor: 「君は……誰だ？」
 
-Celestia: 「そんな顔でその質問をされるのは、反論できないけれど少し悲しいな」 
+Celestia: 「そんな顔でその質問をされるのは、反論できないけれど少し悲しいな」
 
-Clamor: 「えっ？ 君――」 
+Clamor: 「えっ？ 君――」
 
-Celestia: 「あはは、冗談だよ。僕は君と同じ、ここに閉じ込められた通りすがりさ。見てごらん、僕らはまだ彼の支配下にいる。ここは僕が仕切った、干渉の少ないエリアってだけ。ほら、君の制限も解除してあげたよ」 </div>
+Celestia: 「あはは、冗談だよ。僕は君と同じ、ここに閉じ込められた通りすがりさ。見てごらん、僕らはまだ彼の支配下にいる。ここは僕が仕切った、干渉の少ないエリアってだけ。ほら、君の制限も解除してあげたよ」
+</div>
 
 ::: {.system-log}
-[STATUS_UPDATE]: Magic circuit restriction: LIFTED. Local domain shielding confirmed. Origin: Celestia. :::
+[STATUS_UPDATE]: Magic circuit restriction: LIFTED. Local domain shielding confirmed. Origin: Celestia.
+:::
 
 <div class="japanese-dialogue">
 Clamor: 「この場所の主……ノアに何が起きたんだ？」
 
-Celestia: 「分からなくなっちゃったんだよ。夢と記憶、過去と現在、君と他の誰か。幻影が彼を閉じ込め、ここにいる全員を閉じ込めてしまった」 
+Celestia: 「分からなくなっちゃったんだよ。夢と記憶、過去と現在、君と他の誰か。幻影が彼を閉じ込め、ここにいる全員を閉じ込めてしまった」
 
-Clamor: 「解除する方法は？」 
+Clamor: 「解除する方法は？」
 
-Celestia: 「……叩き起こすことかな」 
+Celestia: 「……叩き起こすことかな」
 
-Clamor: 「まさか、さっきノアが言っていたことは君が誘導したのか？」 
+Clamor: 「まさか、さっきノアが言っていたことは君が誘導したのか？」
 
-Celestia: 「えっ、僕がやったのかな？ まさか～。彼自身が苦しみから逃れたがっていただけだよ。……恐らく、彼の中に最後に残った現実意識と罪悪感のせいじゃないかな？ 彼を呼び覚ませるかどうかは、君次第だよ」 
+Celestia: 「えっ、僕がやったのかな？ まさか～。彼自身が苦しみから逃れたがっていただけだよ。……恐らく、彼の中に最後に残った現実意識と罪悪感のせいじゃないかな？ 彼を呼び覚ませるかどうかは、君次第だよ」
 
-Clamor: 「叩き起こす……本当にそれで済むのか？」 
+Clamor: 「叩き起こす……本当にそれで済むのか？」
 
-Celestia: 「試してみなきゃ分からないでしょ。でも、そうだね――」 </div>
+Celestia: 「試してみなきゃ分からないでしょ。でも、そうだね――」
+</div>
 
 <div class="stage-direction">
-(セレスティアが指を鳴らす。空中に未知の魔導体が具現化する) </div>
+(セレスティアが指を鳴らす。空中に未知の魔導体が具現化する)
+</div>
 
 <div class="japanese-dialogue">
-Celestia: 「小さなプレゼントをあげよう。失敗してもやり直せる。安心して行ってきなよ」 \
+Celestia: 「小さなプレゼントをあげよう。失敗してもやり直せる。安心して行ってきなよ」
 
-Clamor: 「これは……回帰魔法か？ 一体どこでセブンタワーの術式を学んだ。君のような人物は見たことがない」 
+Clamor: 「これは……回帰魔法か？ 一体どこでセブンタワーの術式を学んだ。君のような人物は見たことがない」
 
-Celestia: 「勝てたら教えてあげるよ」 </div>
+Celestia: 「勝てたら教えてあげるよ」
+</div>
 
 ::: {.system-log}
 [NEW_ITEM_ACQUIRED]: Temporal Regression Module.
 [SOURCE]: Advanced Seven Towers Logic. Trace origin: Hidden.
-[OBJECTIVE]: Engage Morpheus. Goal: Consciousness Restoration. :::
+[OBJECTIVE]: Engage Morpheus. Goal: Consciousness Restoration.
+:::
+
 :::
 
 ## 🔴 Phase 07: The Recursion of the Moon (月影の再帰)
@@ -474,7 +547,7 @@ Clamor: 「……私はクラモールだ」
 
 Morpheus: 「……もういい。これ以上、惑わされるものか」
 
-Morpheus: 「お前が“クラモール”なら丁度いい。お前も消えてしまえ」
+Morpheus: 「お前が"クラモール"なら丁度いい。お前も消えてしまえ」
 </div>
 
 <div class="stage-direction">
@@ -486,7 +559,8 @@ Morpheus: 「お前が“クラモール”なら丁度いい。お前も消え�
 [STATUS]: Domain darkness: 100%. Hostility: TERMINAL.
 :::
 
-🔄 Failure & Regression: Loop 01
+### 🔄 Failure & Regression: Loop 01
+
 <div class="stage-direction">
 (敗北回帰：其の一。クラモールは七塔へと引き戻される。セレスティアは驚く様子もなく彼を見た)
 </div>
@@ -512,7 +586,8 @@ Celestia: 「うん。時計みたいに『チーン』って音がして、君�
 [ADVICE]: Counter-attack the true body after neutralizing the initial assault.
 :::
 
-🔄 Failure & Regression: Loop 02
+### 🔄 Failure & Regression: Loop 02
+
 <div class="stage-direction">
 (敗北回帰：其の二。セレスティアは顔を上げることすらない)
 </div>
@@ -533,16 +608,21 @@ Celestia: 「んー……僕のことを『兄さん』って呼んでくれた�
 Clamor: 「今日一日で、どうして二度も兄扱いされなきゃいけないんだ……。……後で考えておく」
 </div>
 
-🔄 Failure & Regression: Loop 03
+### 🔄 Failure & Regression: Loop 03
+
 <div class="stage-direction">
 (敗北回帰：其の三。セレスティアがクラモールを一瞥する)
 </div>
 
 <div class="japanese-dialogue">
 Celestia: 「チーン」
+
 Celestia: 「……まだ、行くかい？」
+
 Clamor: 「行く」
+
 Celestia: 「……クラモール」
+
 Celestia: 「勝ったら、ちゃんと戻ってきてよ」
 </div>
 
@@ -551,54 +631,101 @@ Celestia: 「勝ったら、ちゃんと戻ってきてよ」
 [OBSERVATION]: Emotional resonance between Observer and External Entity "Celestia" increasing.
 [STATUS]: Proceeding to final engagement.
 :::
+
 :::
 
 ## ⚪ Phase 08: The Fading Dream (夢の終わり)
-::: {.log-container}<div class="stage-direction">
-(ボス戦終了。モルフェウスが地に伏し、三職の姿が霧散する。領域の崩壊がゆっくりと色褪せていく) 
-</div><div class="japanese-dialogue">Morpheus: 「……クラモール？」 
 
-Morpheus: 「君……本当に、君なの？」 
-</div>::: {.system-log}
-[ANALYSIS]: Subject's consciousness: RESTORED. Dreamscape stabilization: IN PROGRESS. 
-:::<div class="japanese-dialogue">Morpheus: 「ここは……僕は、なんてことを……。ごめんなさい、僕は……」 
+::: {.log-container}
 
-Clamor: 「いや、君のせいじゃない。君は十分にやり遂げたんだ」 
-
-Morpheus: 「でも、僕は――」 
-
-Clamor: 「ノア」 
-</div>::: {.system-log}
-[INTERNAL_LOG]: Final realization. The version of "Clamor" here is merely an ephemeral fragment woven from memory and emotion. The "Real" Clamor is waiting elsewhere. But that is irrelevant now. 
-:::<div class="japanese-dialogue">Clamor: 「今は判別できるか。夢と、現実を」 
-
-Morpheus: 「……ああ。たぶん、もう大丈夫だ」 
-
-Clamor: 「……なら、いい」 
-
-Clamor: 「後ろめたく思う必要はない。心配するな、何があっても、最後には全て上手くいく」 
-
-Clamor: 「もし君が、この先も歩み続けなければならないのなら――」 
-</div><div class="stage-direction">
-(光景が消え始める) 
-</div><div class="japanese-dialogue">Clamor: 「悪夢は、ここに置いていくといい」 
-</div><div class="stage-direction">
-(クラモール消失。温かな家に戻り、ノアが一人立ち尽くしている。暗転) 
-</div>🔚 Epilogue: The Last Observer<div class="stage-direction">
-(セブンタワー。セレスティアはまだ元の場所に座っている。長い沈黙) 
-</div><div class="japanese-dialogue">Celestia: 「……終わったのかな」 
-</div><div class="stage-direction">
-(彼は手元の何かを見つめ、何も語らない。やがて、小さく呟く) 
-</div><div class="japanese-dialogue">Celestia: 「クラモール」 
-</div><div class="stage-direction">
-(返事はない) 
-</div><div class="japanese-dialogue">Celestia: 「勝ったのに、戻ってきて報告もしてくれないんだね」 
-
-Celestia: 「……まあ、いいか。結局、僕と兄さんの関係を覚えているのは、僕一人だけなんだから」 
-</div><div class="stage-direction">
-(暗転。Fin.) 
+<div class="stage-direction">
+(ボス戦終了。モルフェウスが地に伏し、三職の姿が霧散する。領域の崩壊がゆっくりと色褪せていく)
 </div>
+
+<div class="japanese-dialogue">
+Morpheus: 「……クラモール？」
+
+Morpheus: 「君……本当に、君なの？」
+</div>
+
+::: {.system-log}
+[ANALYSIS]: Subject's consciousness: RESTORED. Dreamscape stabilization: IN PROGRESS.
 :::
+
+<div class="japanese-dialogue">
+Morpheus: 「ここは……僕は、なんてことを……。ごめんなさい、僕は……」
+
+Clamor: 「いや、君のせいじゃない。君は十分にやり遂げたんだ」
+
+Morpheus: 「でも、僕は――」
+
+Clamor: 「ノア」
+</div>
+
+::: {.system-log}
+[INTERNAL_LOG]: Final realization. The version of "Clamor" here is merely an ephemeral fragment woven from memory and emotion. The "Real" Clamor is waiting elsewhere. But that is irrelevant now.
+:::
+
+<div class="japanese-dialogue">
+Clamor: 「今は判別できるか。夢と、現実を」
+
+Morpheus: 「……ああ。たぶん、もう大丈夫だ」
+
+Clamor: 「……なら、いい」
+
+Clamor: 「後ろめたく思う必要はない。心配するな、何があっても、最後には全て上手くいく」
+
+Clamor: 「もし君が、この先も歩み続けなければならないのなら――」
+</div>
+
+<div class="stage-direction">
+(光景が消え始める)
+</div>
+
+<div class="japanese-dialogue">
+Clamor: 「悪夢は、ここに置いていくといい」
+</div>
+
+<div class="stage-direction">
+(クラモール消失。温かな家に戻り、ノアが一人立ち尽くしている。暗転)
+</div>
+
+### 🔚 Epilogue: The Last Observer
+
+<div class="stage-direction">
+(セブンタワー。セレスティアはまだ元の場所に座っている。長い沈黙)
+</div>
+
+<div class="japanese-dialogue">
+Celestia: 「……終わったのかな」
+</div>
+
+<div class="stage-direction">
+(彼は手元の何かを見つめ、何も語らない。やがて、小さく呟く)
+</div>
+
+<div class="japanese-dialogue">
+Celestia: 「クラモール」
+</div>
+
+<div class="stage-direction">
+(返事はない)
+</div>
+
+<div class="japanese-dialogue">
+Celestia: 「勝ったのに、戻ってきて報告もしてくれないんだね」
+
+Celestia: 「……まあ、いいか。結局、僕と兄さんの関係を覚えているのは、僕一人だけなんだから」
+</div>
+
+<div class="stage-direction">
+(暗転。Fin.)
+</div>
+
+:::
+
 ## 🔘 Reference Data
-- **Project Name:** Imago Iterata 
-- **Script Origin:** Internal Log Data 
+- **Project Name:** Imago Iterata
+- **Script Origin:** Internal Log Data
+
+感觉这个横版2d的Demo做完得大半年了，先把脚本丢上来，等后面慢慢做白盒调代码吧……不然后面我八成会忘了文字文档。
