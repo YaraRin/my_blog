@@ -1,0 +1,158 @@
+---
+title: "Observation Log: Imago Iterata"
+subtitle: "Symbol Laboratory - Experiment 0x0F2"
+author: "Yara"
+date: "2026-04-19"
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: charcoal
+    toc: true
+    toc-title: "Log Sequence"
+    code-fold: true
+    code-summary: "Execute Logic Trace"
+    css: styles.css
+---
+
+<style>
+/* 针对数字花园设计的自定义样式 */
+.log-container {
+    border-left: 3px solid #2ecc71;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.system-log {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.05);
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.japanese-dialogue {
+    font-family: 'Hiragino Mincho ProN', 'MS Mincho', serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.stage-direction {
+    font-style: italic;
+    color: #888;
+    margin: 1rem 0;
+}
+</style>
+
+## 📂 Research Overview
+**Subject:** Paradoxical Dreamscape Interference Analysis  
+**Primary Observer:** Clamor  
+**Target:** Morpheus (Temporal Anomaly Entity)
+
+---
+
+## 🟢 Phase 01: Initial Displacement
+
+::: {.log-container}
+<div class="stage-direction">
+(暗転。廊下へ。クラモールは辺りを見渡す) [cite_start][cite: 1]
+</div>
+
+<div class="japanese-dialogue">
+[cite_start]**Clamor:** 「ここは……私の研究室ではないな」 
+</div>
+
+::: {.system-log}
+[INTERNAL_LOG]: Post-work fatigue confirmed. Sudden displacement detected. Laboratory environment lost. [cite_start]Current coordinates: Unknown. [cite: 4]
+:::
+
+<div class="stage-direction">
+(少し探り、愕然とする) [cite_start][cite: 3]
+</div>
+
+<div class="japanese-dialogue">
+[cite_start]**Clamor:** 「魔力が……封じられているのか？」 [cite: 3]
+</div>
+
+::: {.system-log}
+[STATUS_REPORT]: Magic circuit status: LOCKED. Ability restriction active. Strategic risk level: HIGH. [cite: 3, 4]
+:::
+
+<div class="stage-direction">
+(遠くでタロットカードが光り、移動を始める) [cite_start][cite: 5]
+</div>
+
+<div class="japanese-dialogue">
+[cite_start]**Clamor:** 「……私を導いているのか？ チッ、他に選択肢はなさそうだな」 [cite: 6]
+[cite_start]**Clamor:** 「……だが、この魔力の感触、どこか聞き覚えがある」 [cite: 7]
+</div>
+:::
+
+## 🔵 Phase 02: The Child of Paradox
+
+::: {.log-container}
+<div class="stage-direction">
+(クラモールはタロットに導かれ、廊下の突き当たりでモルフェウス——幼少期の姿に出会う) [cite_start][cite: 8]
+</div>
+
+<div class="japanese-dialogue">
+[cite_start]**Morpheus:** 「お兄ちゃん、来てくれたんだね」 [cite: 9]
+[cite_start]**Clamor:** 「……っ！」 [cite: 10]
+</div>
+
+::: {.system-log}
+[ANALYSIS]: Unknown entity identified as a child. Mana density: CRITICAL. Domain construction source identified. Hostility level: LOW. [cite: 11]
+[STRATEGY]: Quiet environment vs. structural anomaly. Decision: Cooperative observation. [cite: 12]
+:::
+
+<div class="japanese-dialogue">
+[cite_start]**Clamor:** 「……あ、ああ。こんにちは」 [cite: 13]
+</div>
+
+<div class="stage-direction">
+(廊下の両側に家族の肖像画が掛かっている) [cite_start][cite: 14]
+</div>
+
+<div class="japanese-dialogue">
+[cite_start]**Morpheus:** 「お兄ちゃんは本当にすごいよね、僕にはできないことも全部できちゃうんだ。僕、お兄ちゃんが一番大好きだよ」 [cite: 15]
+</div>
+
+::: {.system-log}
+[VISUAL_ERROR]: Portrait facial features: OBSCURED. Speech pattern analysis: Unnatural. Resembles script-reading or memory-looping. [cite: 17]
+:::
+:::
+
+## 🔴 Phase 03: Temporal Entinement
+
+::: {.log-container}
+<div class="japanese-dialogue">
+[cite_start]**Morpheus:** 「お兄ちゃん、ここを覚えてないの？」 [cite: 18]
+</div>
+
+::: {.system-log}
+[cite_start][SOCIAL_COMPLIANCE]: Subject expects affirmative response. [cite: 19]
+:::
+
+<div class="japanese-dialogue">
+[cite_start]**Clamor:** 「少し疲れているだけだ。案内を続けてくれ」 [cite: 20]
+</div>
+
+<div class="stage-direction">
+(廊下の突き当たり、光が白く染まる) [cite_start][cite: 24, 25]
+</div>
+
+::: {.system-log}
+[MEMORY_DEBUNKING]: No historical record of this encounter exists. Conclusion: Not a simple projection, but a "Crystallization of Memory." Paradoxical overlap detected. [cite: 31, 32]
+:::
+
+<div class="japanese-dialogue">
+[cite_start]**Clamor:** 「私……だと？」 [cite: 29]
+[cite_start]**Clamor:** 「この静寂の違和感は……彼の記憶の齟齬によるものか？」 [cite: 32]
+</div>
+:::
+
+## 🔘 Reference Data
+- [cite_start]**Project Name:** Imago Iterata [cite: 1]
+- [cite_start]**Script Origin:** Internal Log Data [cite: 1]
