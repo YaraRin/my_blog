@@ -1,5 +1,7 @@
 ---
 title: "Observation Log: Imago Iterata"
+description: "An in-depth analysis of the paradoxical dreamscape and its implications on temporal anomalies."
+image: "imago_iterata_cover.png"
 subtitle: "Symbol Laboratory - Experiment 0x0F2"
 author: "Yara"
 date: "2026-04-19"
@@ -727,5 +729,7 @@ Celestia: 「……まあ、いいか。結局、僕と兄さんの関係を覚�
 ## 🔘 Reference Data
 - **Project Name:** Imago Iterata
 - **Script Origin:** Internal Log Data
+
+
 
 感觉这个横版2d的Demo做完得大半年了，先把脚本丢上来，等后面慢慢做白盒调代码吧……不然后面我八成会忘了文字文档。

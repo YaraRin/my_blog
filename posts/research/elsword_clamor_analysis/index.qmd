@@ -1,7 +1,8 @@
 ---
-title: "从俄耳甫斯到赫耳墨斯：Elsword角色的神学设计图谱(Noah&Clamor)"
+title: "从俄耳甫斯到赫耳墨斯"
 title-block-banner-color: "black"
 author: "Els_Backup"
+image: "all_nonsense.png"  # <-- 添加这一行，确保路径正确
 date: "2026-03-26"
 categories: [Research, Gaming, Analysis]
 format:
@@ -15,6 +16,7 @@ format:
 ---
 # 从俄耳甫斯到赫耳墨斯：Elsword角色的神学设计图谱（Noah&Clamor）
 
+*如其在上，全是瞎掰*
 
 ---
 

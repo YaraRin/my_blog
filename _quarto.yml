@@ -3,13 +3,13 @@ project:
   output-dir: _site
 
 website:
-  title: "A Small Stage" # 引用自萨根：A very small stage in a vast cosmic arena.
+  title: "A Small Stage" 
   site-url: "https://YaraRin.github.io"
-  description: 占位符A
+  # 建议修改描述，这会显示在 RSS 订阅器里
+  description: "小时候仰望星空，忘记了心中的道德律令了。"
   
-  # 导航栏配置：左侧逻辑分类，右侧联系方式
   navbar:
-    background: "#f8f9fa" # 淡淡的纸张灰
+    background: "#f8f9fa" 
     collapse: true
     search: true
     left:
@@ -17,15 +17,16 @@ website:
         href: index.qmd
       - text: "Gaming"
         href: "index.qmd#category=Gaming"
-      - text: "Research" # 考据与社会物理学
+      - text: "Research" 
         href: "index.qmd#category=Research"
       - text: "Godot"
         href: "index.qmd#category=Dev"
     right:
+      # 建议把你的 about 页面也挂在导航栏，方便别人找
+      - text: "About"
+        href: about.qmd
       - icon: envelope
-        text: "Contact"
         href: mailto:GreenwichintheSky@outlook.com 
-
 
 format:
   html:
@@ -34,7 +35,6 @@ format:
     css: styles.css
     toc: true
     toc-title: "目录"
-    number-sections: false
     code-fold: true
     code-summary: "展开查看代码"
     code-copy: true
@@ -51,20 +51,23 @@ format:
         theme: light
         language: zh-CN
 
-# 博客列表页配置
+# 重点修改区域：博客列表配置
 listing:
   contents: posts
+  type: grid           # 核心：切换到网格模式
+  grid-columns: 3      # 一行显示 3 个（如果想图更大，可以改 2）
+  image-height: 220px  # 强制统一图片高度，解决高低不齐的问题
+  grid-item-border: false # 去掉边框，看起来更像“艺术画廊”
+  grid-item-align: left
+  
+  # 只保留少量文字字段，让视觉集中在图片上
+  fields: [image, title, date, categories,description] # 只显示图片、标题、日期和分类
+  
   sort: "date desc"
-  type: default
-  categories: true          
-  sort-ui: true
-  filter-ui: true
-  page-size: 10
-  fields: [date, title, reading-time, description, categories]
-  feed: true                
+  categories: true
+  max-description-length: 50
 
-# 语言设置
+# 语言设置建议
 lang: zh
-
 
 

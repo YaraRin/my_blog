@@ -1,15 +1,17 @@
 ---
 title: "Archive / 档案"
-image: profile.jpg
+image: profile.jpg # 确保你的头像文件名是 profile.jpg 且放在同级目录下
 about:
   template: jolla
   links:
     - icon: microsoft
       text: Outlook
       href: mailto:GreenwichintheSky@outlook.com
-  
+    - icon: rss
+      text: RSS
+      href: index.xml # 这里的路径需根据你生成的 RSS 文件名调整
 ---
 
-“再看看那个光点。那是家，那是我们。” —— 卡尔·萨根《暗淡蓝点》
+找个地方养赛博花园，再不济还能改成赛博种菜，大概。
 
-这里是我的业余记录空间。
+

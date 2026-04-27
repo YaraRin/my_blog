@@ -1,6 +1,8 @@
 ---
 title: "圆城塔的散文随笔"
+description: "小时候看这集被巨型智慧当傻子了"
 title-block-banner-color: "black"
+image: "EnJoe_Toh.jpeg"
 author: "What's Up"
 date: "2026-04-06"
 categories: [Scifi]
@@ -14,8 +16,8 @@ format:
     embed-resources: true
 
 ---
-# 圆城塔的自指引擎
 
+*小时候看这集被巨型智慧当傻子了*
 
 ---
 ## 第一部
