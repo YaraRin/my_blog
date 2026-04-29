@@ -5,33 +5,33 @@ project:
 website:
   title: "A Small Stage" 
   site-url: "https://YaraRin.github.io"
-  # 建议修改描述，这会显示在 RSS 订阅器里
+  # 很有意思的改动，康德要是听到了估计会愣住一秒
   description: "小时候仰望星空，忘记了心中的道德律令了。"
   
   navbar:
     background: "#f8f9fa" 
     collapse: true
-    search: true
     left:
       - text: "Archive / 档案"
         href: index.qmd
       - text: "Gaming"
         href: "index.qmd#category=Gaming"
-      - text: "Research" 
+      - text: "Research"
         href: "index.qmd#category=Research"
-      - text: "Godot"
-        href: "index.qmd#category=Dev"
     right:
-      # 建议把你的 about 页面也挂在导航栏，方便别人找
       - text: "About"
         href: about.qmd
       - icon: envelope
-        href: mailto:GreenwichintheSky@outlook.com 
+        href: mailto:GreenwichintheSky@outlook.com
 
 format:
   html:
-    theme: 
-      light: [sandstone]
+    theme:
+      light: [lux, sandstone] 
+      dark: [lux, darkly]
+    page-layout: full
+    hover-footnotes: true
+    date-format: "YYYY-MM-DD"
     css: styles.css
     toc: true
     toc-title: "目录"
@@ -51,23 +51,19 @@ format:
         theme: light
         language: zh-CN
 
-# 重点修改区域：博客列表配置
+# 博客列表页配置
 listing:
   contents: posts
-  type: grid           # 核心：切换到网格模式
-  grid-columns: 3      # 一行显示 3 个（如果想图更大，可以改 2）
-  image-height: 220px  # 强制统一图片高度，解决高低不齐的问题
-  grid-item-border: false # 去掉边框，看起来更像“艺术画廊”
+  type: grid           
+  grid-columns: 3      
+  image-height: 220px  
+  grid-item-border: false 
   grid-item-align: left
-  
-  # 只保留少量文字字段，让视觉集中在图片上
-  fields: [image, title, date, categories,description] # 只显示图片、标题、日期和分类
-  
+  fields: [image, title, date, categories, description] 
   sort: "date desc"
   categories: true
   max-description-length: 50
 
-# 语言设置建议
+# 语言设置
 lang: zh
-
 
