@@ -720,6 +720,8 @@ Celestia: 「勝ったのに、戻ってきて報告もしてくれないんだ�
 Celestia: 「……まあ、いいか。結局、僕と兄さんの関係を覚えているのは、僕一人だけなんだから」
 </div>
 
+![……也对，毕竟我和哥的关系，只有我一个记得。](CEL_End.png){#fig_CEL}
+
 <div class="stage-direction">
 (暗転。Fin.)
 </div>
