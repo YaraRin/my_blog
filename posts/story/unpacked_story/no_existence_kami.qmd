@@ -3,9 +3,9 @@ title: "信仰は儚き人間の為に"
 description: "22年黑历史存档，看完被灌了十年狗血"
 title-block-banner-color: "black"
 image: "v2.jpg"
-author: "What's Up"
-date: "2026-04-06"
-categories: [Scifi]
+author: "Yara"
+date: "2026-05-02"
+categories: [Story]
 format:
   html:
     theme: cosmo
