@@ -18,6 +18,8 @@ website:
         href: "index.qmd#category=Gaming"
       - text: "Research"
         href: "index.qmd#category=Research"
+      - text: "Story"
+        href: "index.qmd#category=story"
     right:
       - text: "About"
         href: about.qmd
