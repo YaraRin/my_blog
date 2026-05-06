@@ -4,7 +4,7 @@ project:
 
 website:
   title: "A Small Stage" 
-  site-url: "https://YaraRin.github.io/my_blog"
+  site-url: "https://YaraRin.github.io/my_blog/"
   # 很有意思的改动，康德要是听到了估计会愣住一秒
   description: "小时候仰望星空，忘记了心中的道德律令了。"
   
