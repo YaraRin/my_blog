@@ -1,6 +1,5 @@
 ---
 title: "从俄耳甫斯到赫耳墨斯"
-title-block-banner-color: "black"
 author: "Els_Backup"
 image: "all_nonsense.png"  # <-- 添加这一行，确保路径正确
 date: "2026-03-26"

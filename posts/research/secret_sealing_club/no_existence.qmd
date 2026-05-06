@@ -1,6 +1,5 @@
 ---
 title: "秘封为什么难以复制？"
-title-block-banner-color: "black"
 author: "Els_Backup"
 image: "GFC_cover.jpg"  # <-- 添加这一行，确保路径正确
 date: "2026-04-20"
