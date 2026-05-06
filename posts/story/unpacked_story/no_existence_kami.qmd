@@ -14,7 +14,6 @@ format:
     number-sections: true
     mainfont: "Segoe UI"
     embed-resources: true
-
 ---
 翻过去的文档发现了个“了不得”的狗血同人黑历史，说实话角色实在和原作不像，就改个名字留档，哪天忘记了再上来看一看，感受一下当年的晚八点气场。
 
