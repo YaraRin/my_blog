@@ -9,7 +9,7 @@ website:
   description: "小时候仰望星空，忘记了心中的道德律令了。"
   
   navbar:
-    background: "#f8f9fa" 
+    background: dark
     collapse: true
     left:
       - text: "Archive / 档案"
@@ -29,8 +29,10 @@ website:
 format:
   html:
     theme:
-      light: [lux, sandstone] 
-      dark: [lux, darkly]
+      light: cosmo  # 或者你现在用的主题名，比如 flatly, minimal 等
+      dark: darkly # 官方推荐的暗色主题，或者用 vapor, slate
+    # 这一行确保在导航栏显示切换图标
+    dark-mode-switch: true
     page-layout: full
     hover-footnotes: true
     date-format: "YYYY-MM-DD"

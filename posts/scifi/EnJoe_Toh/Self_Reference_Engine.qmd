@@ -8,7 +8,7 @@ date: "2026-04-06"
 categories: [Scifi]
 format:
   html:
-    theme: cosmo
+    #theme: cosmo
     toc: true
     toc-location: left
     number-sections: true

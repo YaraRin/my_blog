@@ -4,6 +4,9 @@ image: profile.jpg # 确保你的头像文件名是 profile.jpg 且放在同级�
 about:
   template: jolla
   links:
+    - icon: chat-dots
+      text: Weibo
+      href: https://weibo.com/7928287679
     - icon: microsoft
       text: Outlook
       href: mailto:GreenwichintheSky@outlook.com

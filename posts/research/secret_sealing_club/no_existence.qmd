@@ -7,7 +7,7 @@ date: "2026-04-20"
 categories: [Research, Gaming]
 format:
   html:
-    theme: cosmo
+    #theme: cosmo
     toc: true
     toc-location: left
     number-sections: true

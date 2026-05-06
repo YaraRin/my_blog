@@ -1,68 +1,127 @@
-/* 衬线体更适合长文阅读和考据氛围 */
+/* 1. 找回你最爱的字体与配色协议 */
+:root {
+  /* 恢复你之前的微黄纸张色与深石青文字 */
+  --bg-color: #fdfdfb;        
+  --text-color: #2c3e50;      
+  --secondary-text: #555;
+  --border-color: #333;
+  --blockquote-bg: #f1f1f1;
+}
+
+/* 暗色模式下，我们保持字体不变，只换底色 */
+.quarto-dark {
+  --bg-color: #1a1a1a;        
+  --text-color: #e0e0e0;      
+  --secondary-text: #999;
+  --border-color: #444;       
+  --blockquote-bg: #252525;
+}
+
+/* 2. 核心：全局应用你指定的字体栈 */
 body {
-    font-family: "EB Garamond", "Source Han Serif SC", "Noto Serif CJK SC", serif;
-    background-color: #fdfdfb; /* 微微泛黄的纸张色，防疲劳且有质感 */
-    color: #2c3e50;
+  /* 恢复 EB Garamond 组合 */
+  font-family: "EB Garamond", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7; /* 衬线体稍微加点行间距，阅读感更好 */
+  -webkit-font-smoothing: antialiased; /* 让宋体在屏幕上更锐利一点 */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 让《暗淡蓝点》的引用更有仪式感 */
+/* 让标题也统一成宋体，增加厚重感 */
+h1, h2, h3, h4, .listing-title, .navbar-brand {
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", serif;
+  font-weight: 700;
+}
+
+/* 3. 让《暗淡蓝点》的仪式感跨越昼夜 */
 blockquote {
-    border-left: 3px solid #333;
-    padding-left: 1.5em;
-    font-style: italic;
-    color: #555;
-    background: #f1f1f1;
-    padding: 1rem;
-    border-radius: 4px;
+  border-left: 3px solid var(--border-color);
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  color: var(--secondary-text);
+  background: var(--blockquote-bg);
+  border-radius: 4px;
+  margin: 1.5em 0;
 }
 
-/* 导航栏底部加一条细线，增加硬朗感 */
+/* 4. 导航栏：消除“白顶”整蛊 */
 .navbar {
-    border-bottom: 1.5px solid #333 !important;
+  border-bottom: 1.5px solid var(--border-color) !important;
+  /* 确保导航栏背景透明或跟随主题 */
+  background-color: var(--bg-color) !important; 
 }
 
-/* 侧边注释样式：适合放你的物理公式或法条对比 */
-.aside {
-    font-size: 0.85rem;
-    color: #666;
-    line-height: 1.4;
-}
-
-/* 网格图片容器优化 */
-.quarto-listing-container-grid .grid-item .thumbnail img {
-  object-fit: cover;    /* 确保图片填充不拉伸 */
-  transition: transform 0.3s ease; /* 增加平滑动画 */
-}
-
-/* 鼠标悬停时图片轻微放大 */
-.quarto-listing-container-grid .grid-item:hover .thumbnail img {
-  transform: scale(1.03);
-}
-
-/* 隐藏不必要的卡片描述阴影，保持极简 */
+/* 5. 网格卡片与描述：保持极简秩序 */
 .card {
   border: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
 }
 
-/* 标题稍微加粗，与背景区分开 */
 .listing-title {
+  font-family: "Source Han Serif SC", serif;
   font-weight: 600;
+  font-size: 1.1rem;
   margin-top: 10px;
+  margin-bottom: 2px;
+  color: var(--text-color);
 }
 
-/* 优化网格中的描述文字 */
 .listing-description {
-  font-size: 0.85rem;    /* 稍微调小一点 */
-  color: #666;           /* 使用深灰色，不要太黑 */
+  font-size: 0.85rem;
+  color: var(--secondary-text);
   line-height: 1.5;
   margin-top: 5px;
-  font-style: italic;    /* 倾斜处理，更像萨根式的语录感 */
+  font-style: italic; /* 萨根式的语录感 */
 }
 
-/* 确保标题和描述之间有呼吸感 */
-.listing-title {
-  font-size: 1.1rem;
-  margin-bottom: 2px;
+/* 6. 交互动画 */
+.quarto-listing-container-grid .grid-item .thumbnail img {
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.quarto-listing-container-grid .grid-item:hover .thumbnail img {
+  transform: scale(1.03);
+}
+
+/* 针对暗色模式图片的亮度降噪 */
+.quarto-dark img {
+  filter: brightness(0.85) contrast(1.1);
+}
+.quarto-dark img:hover {
+  filter: brightness(1);
+}
+
+
+/* 1. 确保所有核心容器都继承变量背景 */
+#quarto-content, 
+.quarto-container, 
+main, 
+.page-columns, 
+#title-block-header,
+.quarto-title-block {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* 2. 专门对付文章顶部的标题块 */
+header.quarto-title-block.default .quarto-title-meta {
+  color: var(--secondary-text);
+}
+
+/* 3. 修复文章页面的边栏（如果有的话） */
+.sidebar, .nav-page {
+  background-color: var(--bg-color) !important;
+}
+
+/* 4. 如果你用了代码块，确保它们在亮色模式下也不会太突兀 */
+pre, code {
+  background-color: var(--blockquote-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* 5. 重点：检查并删除之前可能残留的硬编码 */
+/* 搜索你的 style.css，看看有没有单独给 .page-columns 或 main 设置过背景 */

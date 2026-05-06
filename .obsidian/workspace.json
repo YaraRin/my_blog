@@ -11,14 +11,10 @@
             "id": "acb719f4c251e87b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/story/diary_00.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "diary_00"
+              "title": "新标签页"
             }
           }
         ]

@@ -26,6 +26,12 @@
     ],
     "posts\\research\\secret_sealing_club\\no_existence.qmd": [
       "../../../posts"
+    ],
+    "posts\\story\\diary\\diary_00\\diary_00.qmd": [
+      "../../../../posts"
+    ],
+    "posts\\story\\unpacked_story\\no_existence_kami.qmd": [
+      "../../../posts"
     ]
   }
 }
