@@ -1,0 +1,117 @@
+---
+title: "meta解谜demo点击检测问题排查过程"
+author: Yara
+image:  cover.png
+date: 2026-05-07
+categories: [godot, gaming]
+description: "为啥你家壁纸点了没反应呢莫小眠"
+---
+
+一开始补完主线故事，本来是想做nine sols的蚨蝶关卡的mod，结果一查发现这个mod大头是美术，索性摸了，苦了那写好的脚本（咋感觉苦的都是某塔罗小男孩）。后来想了想换成meta解密似乎开发量小点，就试了试godot，结果上手搭框架和白盒的时候在基础地方遇上了bug。
+
+## 背景
+游戏的一周目是类似KinitoPet的模式。核心场景是一个虚拟桌面，桌面上有文件图标、任务栏、一个角色立绘区域，以及一张占满全屏的壁纸。玩家点击壁纸的不同区域，角色会有不同的反应台词。
+
+节点结构大概是这样：
+```
+MorpheusDesktop
+├── Wallpaper (ColorRect)
+├── FileArea (Control)
+├── MorpheusZone (TextureRect)
+├── Taskbar (ColorRect)
+└── DialogBox (Control)
+```
+
+## 第一次尝试：_gui_input
+
+最直觉的做法，给Wallpaper挂脚本，用_gui_input检测点击：
+
+```gdscript
+gdscriptfunc _gui_input(event):
+    if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+        if event.pressed:
+            print("壁纸被点击了")
+```
+
+跑起来，点壁纸，没有任何打印。
+
+第一反应是Mouse Filter的问题。Godot的Control节点有三种Mouse Filter状态：
+
+Stop：接收鼠标输入，不往下传
+
+Pass：接收鼠标输入，同时往下传
+
+Ignore：忽略鼠标输入
+
+Wallpaper默认是Stop，理论上没问题。但上层节点FileArea如果也是Stop，点击就会被它拦住，传不到Wallpaper。
+
+把FileArea改成Pass，再试，还是没反应。
+
+## 第二次尝试：换成_input
+
+_gui_input是UI系统的输入检测，有时候会有优先级问题。换成全局输入检测_input：
+
+```gdscript
+gdscriptfunc _input(event):
+    if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+        if event.pressed:
+            print("壁纸被点击了")
+```
+
+这次有打印了，但同时发现Clock和RecycleBin的点击也没反应。因为_input是全局的，Wallpaper把所有点击都消耗掉了，其他节点收不到。
+
+三个节点不能都用_input，会互相抢。
+
+## 第三次尝试：统一交给Desktop管理
+
+既然_gui_input不稳定，干脆把壁纸的点击检测移到MorpheusDesktop脚本里，用_input全局检测，然后用rect判断鼠标有没有落在其他节点上，没有的话就当作点了壁纸：
+
+```gdscript
+gdscriptfunc _input(event):
+    if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+        if event.pressed:
+            var mouse_pos = get_global_mouse_position()
+            if not $FileArea.get_global_rect().has_point(mouse_pos) and \
+               not $MorpheusZone.get_global_rect().has_point(mouse_pos) and \
+               not $Taskbar.get_global_rect().has_point(mouse_pos) and \
+               not $DialogBox.get_global_rect().has_point(mouse_pos):
+                $Wallpaper.trigger_wallpaper_click()
+```
+
+跑起来，点壁纸，还是没反应。
+
+加print排查：
+
+```gdscript
+gdscriptprint("FileArea rect: ", $FileArea.get_global_rect())
+print("鼠标位置: ", mouse_pos)
+打印结果：
+FileArea rect: [P: (0.0, 0.0), S: (1920.0, 1080.0)]
+鼠标位置: (1076.0, 715.0)
+```
+
+找到了。
+
+FileArea的rect是(0,0)大小1920x1080，覆盖了整个屏幕。所以任何点击都会被判断为"点在FileArea上"，壁纸的条件永远满足不了。
+
+## 解决
+
+把FileArea从条件判断里去掉，只保留真正需要排除的节点：
+
+```gdscript
+gdscriptif not $MorpheusZone.get_global_rect().has_point(mouse_pos) and \
+   not $Taskbar.get_global_rect().has_point(mouse_pos) and \
+   not $DialogBox.get_global_rect().has_point(mouse_pos):
+    $Wallpaper.trigger_wallpaper_click()
+```
+
+这次终于出来了。
+
+## 总结
+Godot里做点击检测遇到的几个坑：
+
+1. Mouse Filter要从上到下全部检查，任何一层是Stop都会拦住下面的节点，不只是直接父节点。
+
+2. _gui_input和_input不能混用，前者走UI系统，后者走全局输入，在同一个场景里混用会出现优先级冲突。
+
+3. 节点rect不代表视觉大小，Container类节点默认会撑满父节点，就算看起来是空的，rect也可能覆盖了整个屏幕。遇到点击不响应，先把所有节点的get_global_rect()打印出来比对鼠标位置，比猜快得多。
