@@ -3,7 +3,7 @@ title: "meta解谜demo点击检测问题排查过程"
 author: Yara
 image:  cover.png
 date: 2026-05-07
-categories: [godot, gaming]
+categories: [Godot, Gaming]
 description: "为啥你家壁纸点了没反应呢莫小眠"
 ---
 
