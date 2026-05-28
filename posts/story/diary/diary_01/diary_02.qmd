@@ -1,0 +1,119 @@
+---
+title: "何谓才能" 
+date: "2026-05-28"
+description: "我是边缘人，我也不知道"
+author: "Yara"
+categories: [Story]
+image: "images/cover.png"  
+---
+
+既然是随笔部分，那就先放一下无关的demo推进记录好了。封面是demo有关的归档，看来我的推进效率也不是很高啊（闭目）……而受限于载体，这个demo有透露就不好玩了，那还是再等两个月把它做完吧。
+
+
+## 天赋无法脱离赛道而存在
+
+对于标题的“何谓才能”，大概是因为我今年年初看了一个竞技类作品，讲的是主角一步步在某个比赛赛道中成长，最后和劲敌相会在舞台。当时我第一反应是这动画怎么不讨论比赛制度对人的异化，第二反应才是“噢，美少女比赛真好看”。
+
+这类竞技作品，大多是设定一个具体的标准，人在这个标准之下的各种表现便是观众们的看点了。诸如记忆力强是才能，执行力稳定是才能，在规则密集的体系里快速定位答案也是才能。这些能力在标准化考试、科层制组织、规范性职业里很值钱，因为这些场合需要的正是"把体系内化成本能，然后稳定输出"。
+
+但是，跨域连接是才能，直觉感知结构异常是才能，在两个看似不相关的领域之间找到同构关系也是才能。这些能力在标准化赛道上几乎没有用武之地，因为标准答案不留空间给直觉，也不奖励你把量子力学和妖怪怪谈放在一起想。
+
+两种能力都是真实的，差别只在于哪条赛道认可它。
+
+大多数竞技作品，以及强调“天才”和“庸人”主题的作品，它们的残酷在于只承认一种赛道上的胜利，然后把其他所有能力分布统一贴上"没才能"的标签。这个标签被重复得足够多，就会被误认为是客观描述，而不是一个特定评价体系的局部判断。
+
+## 思维方式各有其作用
+
+粗略来说，人的思维方式可以分成两种原型。
+
+一种是规范先行。先有体系，再有判断。把规则内化之后，碰到具体问题自然触发对应的解法。教义、标准化考试、精确执行型工作需要的是这种能力。它的优势是稳定、可复制、容易评估。
+
+另一类是直觉先行。先感知到"这里有什么不对劲"，然后才反过来找逻辑去验证和建构。跨学科、创意设计、发现新问题的工作需要的是这种能力。它的优势是能在没有现成答案的地方起步。
+
+这两种方式本质上没有高下，只是擅长的地形不同。规范先行的人在没有标准答案的问题面前容易卡住，因为没有框架可以套；直觉先行的人在要求精确复现规范的考试里系统性吃亏，因为直觉在那里没有用武之地。
+
+问题在于，现有的大多数的评价机制，比如考试、资格认证、绩效考核都更适合衡量规范先行的能力。这倒不是阴谋，只是规范先行的能力更容易被量化和标准化。于是直觉先行的人长期拿到的外部反馈是"你不行"，而不是"你在这条赛道上不行"。
+
+## 努力叙事的遮蔽
+
+这类竞技作品还有一个更隐蔽的问题。它们几乎都在贩卖一种精英叙事——只要足够努力，才能就会被激发，普通人足以逆袭。
+
+这个叙事本身不是谎言，但它有一个沉默的前提。投入时间产生收益的前提，是你已经在正确的赛道上。一个直觉先行的人在规范型考试里无论怎么努力，得到的大都是低于规范先行者的分数，因为那条赛道的评判标准天然和他的能力分布错配。对他说"再努力一点就行"，不是鼓励，是用一个普遍化的叙事遮蔽了一个具体的结构性问题。
+
+更精确地说，这类作品的精英主义在于它的叙事框架预先假定了赛道是中立的。既然赛道中立，那么结果就只取决于个人，努力的人赢，不努力的人输，有才能的人登顶，没才能的人出局。这个逻辑闭环非常整洁，整洁到没有给"跑错赛道"留下任何位置。
+
+于是现实中大量跑错赛道的人，在这套叙事框架里只有一种解释：不够努力，或者真的没有才能。两种解释都把问题归结到个人，都不追问赛道本身是否适合这个人。
+
+## 承认普通人跑错赛道这件事
+
+所谓对普通人的关怀，不一定是降低标准，或者强调"每个人都有才能"这种廉价的安慰。更诚实的关怀，是承认跑错赛道这件事的真实存在，并且把它从道德评价的领域里剥离出去。
+
+跑错赛道不是失败，是信息。它说明的是这条赛道的评判标准和这个人的能力分布之间存在错配，仅此而已。但在奋斗叙事的框架里，跑错赛道会被自动翻译成"我不行"——因为那个框架默认赛道是对的，所以不对的只能是人。
+
+这个翻译过程是有代价的。一个长期在错误赛道上收到"你不行"反馈的人，最终内化的不是"我需要换条路"，而是"我本来就不行"的习得性无助。这两个结论在事实层面的差距极大，但在那个叙事框架里它们是等价的，因为框架本身不提供区分它们的工具。
+
+所以需要的不是更多鼓励，而是一个能够区分"这条路不适合我"和"我没有价值"的认知框架。前者是可以被处理的具体信息，后者是一个笼统的否定，处理不了，只能承受。
+
+才能是赛道依赖的，错配是结构性的，跑错赛道是一件可以被描述和理解的事情，不是一个需要被羞耻的结论。
+
+## 弱者不需要用才能换取关怀
+
+那“弱者”呢，也就是那些生理上真正有疾病或者残缺的人呢？说起来对于这事，Noah的主线故事倒是有讨论过。  
+
+
+    Clamor: Artificial spirit is just a name to help an average person understand better. It's actually   closer to elemental magic with the addition of implementing spirits' behavioral patterns.
+ 
+    Noah: I still don't understand. How does this all work?
+
+    Clamor: Mm... In one of my earlier successes... There was an auto-sweeping broom using the artificial spirit of wind.
+ 
+    Noah: ... It's rather plain, considering the grandiose theory behind it. What about others?
+ 
+    Clamor: A lamp that lights itself when someone approaches.
+ 
+    Noah: Do your own chores!
+ 
+    Clamor: Sigh... The three greatest innovation in technology is lightness, diversity, and 
+    high-performance. Of course YOU wouldn't understand, kid.
+ 
+    Noah: You just made it because you're too lazy to do them yourself. I bet the floor was the only thing clean in your house.
+ 
+    Clamor: You say it as if you're seen it yourself... You're right. A task of cleaning or turning on the lights is nothing special for an average individual.
+ 
+    Clamor: But what if you're missing an arm or a leg? Those ordinary chores would become exponentially more difficult.
+ 
+    Clamor: Even those without disabilities would find these tasks hard to accomplish if you are very young, or very old. I bet you couldn't do certain things when you were younger and shorter, hm?
+ 
+    Noah: Well... Yes...
+ 
+    Clamor: When I was younger, there was a fire every two months or so. It usually started because someone made a mistake when lighting a lamp.
+ 
+    Clamor: Those mistakes were often made by those who were old with shaking arms, or children who had a hard time reaching the lamps.
+ 
+    Clamor: So I thought, if there are so many accidents that happen, trying to light a lamp, why not remove the process completely and let magic handle it?
+ 
+    Noah: ...I never thought of it like that... To fix things that way.
+ 
+    Clamor: Of course, these tasks are easy with magic or servants, but not everyone is blessed like that.
+ 
+    Clamor: Everyone selects tools according to their needs. The wider the selection of tools, the more 
+    convenience there is for the people.
+ 
+    Clamor: As a magitech scholar, it is my job to solve even the most trivial problems. Well, at least, that's one aspect of it. Do you get it now?
+ 
+    Noah: ... I heard something similar. That the Goddess gave us the will to cover each other's weaknesses in order to create a complete world.
+ 
+    Noah: What you made, it somehow reminded me of it. It may have nothing to do with each other but...
+ 
+    Clamor: You're right. Covering flaws and enhancing strengths is the foundation in the field of magitech.
+
+为什么要发明那些看似平凡的自动装置，比如自扫的扫帚、感应点亮的灯呢。故事里说的是点灯对普通人来说微不足道，但对手臂颤抖的老人、够不到灯的孩子、残疾人来说，这件事会变得极其困难。Clamor的结论是扬长避短是魔导技术的根本。
+
+这个逻辑是善意的，也是实用的。工具补足缺陷，让更多人能抵达更多赛道，这是应当的。
+
+但这里有一个值得注意的地方。Clamor的框架落点仍然是“有了工具你就能做更多事”。弱者值得被帮助，因为帮助之后他们能变得更有能力。价值还是挂在能力上的。这个逻辑推到极限，会产生一个问题。那些无论如何补足都无法在任何赛道上产出的人呢？那些疾病或残缺已经超出工具所能覆盖的范围的人呢？如果关怀的前提是“帮助之后能变得有用”，那这些人就会系统性地落在关怀的边界之外（当然，我觉得ACG能有这种关注弱者的故事其实已经很好了，不多见呢）。
+
+所以需要的不只是更多工具，还需要把关怀的前提从能力上剥离开来。一个人值得被覆盖到是因为他本来就在这个范围里。这个承认不依附于任何赛道，不依附于任何形式的才能，也不依附于努力之后的结果。
+
+才能是赛道依赖的，弱者不需要用才能换取被承认的权利。这两件事说的其实是同一件事，人的价值不应该是能力的函数。这也是康德的“人是目的，不是手段”的核心所在。
+
