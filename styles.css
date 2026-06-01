@@ -1,6 +1,5 @@
-/* 1. 找回你最爱的字体与配色协议 */
+
 :root {
-  /* 恢复你之前的微黄纸张色与深石青文字 */
   --bg-color: #fdfdfb;        
   --text-color: #2c3e50;      
   --secondary-text: #555;
@@ -8,7 +7,7 @@
   --blockquote-bg: #f1f1f1;
 }
 
-/* 暗色模式下，我们保持字体不变，只换底色 */
+/* 暗色模式下，保持字体不变，只换底色 */
 .quarto-dark {
   --bg-color: #1a1a1a;        
   --text-color: #e0e0e0;      
@@ -17,7 +16,7 @@
   --blockquote-bg: #252525;
 }
 
-/* 2. 核心：全局应用你指定的字体栈 */
+/* 2. 核心：全局应用指定的字体栈 */
 body {
   /* 恢复 EB Garamond 组合 */
   font-family: "EB Garamond", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", serif;
@@ -112,16 +111,13 @@ header.quarto-title-block.default .quarto-title-meta {
   color: var(--secondary-text);
 }
 
-/* 3. 修复文章页面的边栏（如果有的话） */
+/* 3. 修复文章页面的边栏 */
 .sidebar, .nav-page {
   background-color: var(--bg-color) !important;
 }
 
-/* 4. 如果你用了代码块，确保它们在亮色模式下也不会太突兀 */
+/* 4. 代码块确保它们在亮色模式下也不会太突兀 */
 pre, code {
   background-color: var(--blockquote-bg) !important;
   color: var(--text-color) !important;
 }
-
-/* 5. 重点：检查并删除之前可能残留的硬编码 */
-/* 搜索你的 style.css，看看有没有单独给 .page-columns 或 main 设置过背景 */

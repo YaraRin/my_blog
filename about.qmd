@@ -1,6 +1,6 @@
 ---
 title: "Archive / 档案"
-image: profile.jpg # 确保你的头像文件名是 profile.jpg 且放在同级目录下
+image: profile.jpg 
 about:
   template: jolla
   links:
@@ -12,7 +12,7 @@ about:
       href: mailto:GreenwichintheSky@outlook.com
     - icon: rss
       text: RSS
-      href: index.xml # 这里的路径需根据你生成的 RSS 文件名调整
+      href: index.xml
 ---
 
 找个地方养赛博花园，再不济还能改成赛博种菜，大概。
