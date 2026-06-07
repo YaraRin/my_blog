@@ -3,7 +3,7 @@ title: "Dies Irae ED歌词翻译存档"
 author: "Yara"
 date: "2026-05-10"
 categories: [Gaming, Translation, Story]
-image: "cover.png" # 建议配一张带有舞台感或哥特风格的封面图
+image: "cover.png"
 description: "为被拣选之伶人，献此至高之歌剧——"
 format:
   html:
