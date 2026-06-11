@@ -1,0 +1,417 @@
+---
+title: "Cosmic Scale Pretty歌词翻译存档"
+author: "Yara"
+date: "2026-06-11"
+categories: [Gaming, Translation]
+image: "cover.png"
+description: "潜在的宇宙规模美少女是也~"
+format:
+  html:
+    embed-resources: true
+    page-layout: full
+---
+
+这曲子蛮好听的，自己翻了一版，没原版那么少女，但或许更贴近CEL？我其实觉得原版歌词也挺贴合CEL的。
+
+
+```{=html}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap');
+
+  :root {
+    --bg: #0a0a12;
+    --surface: #11111e;
+    --border: rgba(160, 140, 220, 0.15);
+    --accent: #a08cd0;
+    --accent-glow: rgba(160, 140, 220, 0.3);
+    --text-jp: #c8c0e0;
+    --text-zh: #e8e4f4;
+    --text-dim: rgba(180, 170, 210, 0.35);
+    --active-jp: #d4c8f0;
+    --active-zh: #ffffff;
+    --active-glow: rgba(160, 140, 220, 0.18);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-zh);
+    font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .player-wrap {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .title-jp {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
+
+  .title-main {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-zh);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  .title-sub {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    letter-spacing: 0.15em;
+  }
+
+  /* Audio controls */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .play-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  .play-btn:hover {
+    background: var(--accent-glow);
+    box-shadow: 0 0 12px var(--accent-glow);
+  }
+
+  .play-btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+  .progress-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 2px;
+    background: var(--border);
+    border-radius: 1px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 1px;
+    width: 0%;
+    transition: width 0.1s linear;
+    position: relative;
+  }
+
+  .progress-fill::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 6px var(--accent);
+  }
+
+  .time {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    font-family: monospace;
+  }
+
+  /* Lyrics container */
+  .lyrics-wrap {
+    height: 420px;
+    overflow-y: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .lyrics-wrap::-webkit-scrollbar { width: 3px; }
+  .lyrics-wrap::-webkit-scrollbar-track { background: transparent; }
+  .lyrics-wrap::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .lyric-block {
+    padding: 0.65rem 1.5rem;
+    border-left: 2px solid transparent;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    margin-bottom: 0.1rem;
+  }
+
+  .lyric-block:hover {
+    background: rgba(160, 140, 220, 0.05);
+  }
+
+  .lyric-block.active {
+    border-left-color: var(--accent);
+    background: var(--active-glow);
+  }
+
+  .lyric-jp {
+    font-size: 0.82rem;
+    color: var(--text-jp);
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    font-family: 'Noto Serif JP', serif;
+    transition: color 0.35s;
+  }
+
+  .lyric-zh {
+    font-size: 0.88rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    margin-top: 0.2rem;
+    transition: color 0.35s;
+  }
+
+  .lyric-block.active .lyric-jp {
+    color: var(--active-jp);
+  }
+
+  .lyric-block.active .lyric-zh {
+    color: var(--active-zh);
+  }
+
+  /* Fade edges */
+  .lyrics-container {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .lyrics-container::before,
+  .lyrics-container::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    height: 60px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .lyrics-container::before {
+    top: 0;
+    background: linear-gradient(to bottom, var(--surface), transparent);
+  }
+
+  .lyrics-container::after {
+    bottom: 0;
+    background: linear-gradient(to top, var(--surface), transparent);
+  }
+
+  /* Star decoration */
+  .star-line {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.6rem;
+    letter-spacing: 0.5em;
+    padding: 1.5rem 0 0.5rem;
+  }
+</style>
+</head>
+<body>
+<div class="player-wrap">
+  <div class="header">
+    <div class="title-jp">STREET FIGHTER 6 · CHARACTER THEME</div>
+    <div class="title-main">Cosmic Scale Pretty</div>
+    <div class="title-sub">潜在的宇宙規模美少女 ／ Celestia Ver.</div>
+  </div>
+
+  <div class="controls">
+    <button class="play-btn" id="playBtn" onclick="togglePlay()">
+      <svg id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="progressBar" onclick="seek(event)">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="time" id="timeDisplay">0:00 / 0:00</div>
+    </div>
+  </div>
+
+  <div class="lyrics-container">
+    <div class="lyrics-wrap" id="lyricsWrap"></div>
+  </div>
+
+  <div class="star-line">· · · ✦ · · ·</div>
+</div>
+
+<audio id="audio" preload="metadata">
+  <source src="ingrid_theme.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const lyrics = [
+  { t: 18.447, jp: "太陽は麗らかに　星空は泡沫に消え", zh: "太阳灿烂明媚，星空化为泡沫消散" },
+  { t: 22.931, jp: "儚い夢は夜空の煌めきに", zh: "转瞬即逝的梦，在夜空的闪烁中" },
+  { t: 26.641, jp: "創世のときめきに輝いて", zh: "随创世的悸动而熠熠生辉" },
+  { t: 30.383, jp: "光は奇跡を必然にして時空を超える", zh: "光将奇迹化为必然，超越时空" },
+  { t: 38.758, jp: "いつか見たあの星空のように", zh: "就像曾经仰望过的那片星空" },
+  { t: 45.925, jp: "いっせーのーで　君と居た時空の彼方へ飛ぶよ", zh: "一二三！飞向与你共度的时空彼方" },
+  { t: 52.461, jp: "ぜったいNoで!　ディストピア", zh: "绝对No！反乌托邦" },
+  { t: 55.878, jp: "いつだってどこだって心動いてる　恋してるの", zh: "无论何时何地心里都有人，记挂着呢" },
+  { t: 59.577, jp: "カラメルキャラメルアキラメル", zh: "焦糖、太妃糖、算了吧" },
+  { t: 61.268, jp: "疑心　自信　以心　鰊? (Whoo!)", zh: "疑心、自信、以心、鲱鱼？（Whoo!）" },
+  { t: 62.979, jp: "潜在的宇宙規模美少女です。", zh: "隐于星幕之下、宇宙规模的美少女是也。" },
+  { t: 67.082, jp: "Let's party!　Super girl!", zh: "Let's party! Super girl!" },
+  { t: 83.503, jp: "暗い宇宙(ソラ)に昇る銀のゆらめきは", zh: "黑暗星空中升起银色的摇曳" },
+  { t: 88.073, jp: "デアイ＝トワノワカレ", zh: "相遇＝永恒的离别" },
+  { t: 90.376, jp: "幾億と繰り返し真実は見いだせず瞬いた", zh: "亿万次重复，真相仍无从寻觅，只是眨眼间闪烁" },
+  { t: 95.325, jp: "光は奇跡を必然にして世界を紡ぐ", zh: "光将奇迹化为必然，编织世界" },
+  { t: 103.874, jp: "ココロ　カラダ　オモイ　満天輝いてく", zh: "心、身、念，满天繁星熠熠发光" },
+  { t: 109.581, jp: "(いくよー!)", zh: "（出发咯！）" },
+  { t: 110.939, jp: "いっせーのーで　背伸びして届きそうで届かない想い", zh: "一二三！踮起脚尖，触手可及却又触不到的心意" },
+  { t: 117.662, jp: "ちょっと!直球?　ちょこれいと", zh: "喂！这也太直接了？巧克力" },
+  { t: 121.010, jp: "いつだってどこだって心動いてる　恋してるの", zh: "无论何时何地心里都有人，记挂着呢" },
+  { t: 124.670, jp: "かまってよ　絡んでカラまわって", zh: "理我嘛，缠缠绕绕解不开" },
+  { t: 126.345, jp: "どりーむはアイスクリーム(goo!)", zh: "梦想就是冰淇淋（goo!）" },
+  { t: 128.098, jp: "潜在的宇宙規模美少女です。", zh: "源于星海的宇宙规模美少女是也。" },
+  { t: 132.180, jp: "Let's party! Super girl!", zh: "Let's party! Super girl!" },
+  { t: 134.963, jp: "完璧　鉄壁　神秘の存在", zh: "完美、固若金汤、神秘的存在" },
+  { t: 138.283, jp: "ちょっと聞いてるの?", zh: "你在听吗？" },
+  { t: 140.817, jp: "(もー)(あがめなさい)", zh: "（够了哦）（迷上我的光芒吧）" },
+  { t: 142.107, jp: "bitterな生き方がsweetを引き立てるの", zh: "苦涩活法正是衬托甜蜜底色" },
+  { t: 145.930, jp: "(秘密は消えない癒えない)", zh: "（秘密消不去，也愈合不了）" },
+  { t: 148.876, jp: "あぁ～もー!いやだってってば", zh: "啊～够了！我说不要嘛" },
+  { t: 150.322, jp: "きままに自由にさせてよね", zh: "让我随心所欲自由自在嘛" },
+  { t: 151.858, jp: "いま欲しいものはココロじゃないの", zh: "现在想要的不是什么心意" },
+  { t: 153.781, jp: "甘いアマイやmineで満たされたい", zh: "想被甜甜的、甜甜的、你填满" },
+  { t: 155.805, jp: "0と1が交わる輪廻の果て", zh: "0与1交汇的轮回尽头" },
+  { t: 158.764, jp: "燦々ナガレテユク", zh: "灿灿地流淌而去" },
+  { t: 175.114, jp: "(せーのっ!)", zh: "（预备起！）" },
+  { t: 176.020, jp: "いつでも君を探してる(lalala...)", zh: "无论何时都在找你（lalala...）" },
+  { t: 182.754, jp: "Happy shining 光照らす道になる(lalala...)", zh: "Happy shining 成为照亮前路的星（lalala...）" },
+  { t: 189.697, jp: "いっせーのーで　君と居た時空の彼方へ飛ぶよ", zh: "一二三！飞向与你共度的时空彼方" },
+  { t: 196.447, jp: "ぜったいNoで!ディストピア", zh: "绝对No！反乌托邦" },
+  { t: 199.883, jp: "いつだってどこだって心動いてる　恋してるの", zh: "无论何时何地心里都有人，记挂着呢" },
+  { t: 203.501, jp: "カラメルキャラメルアキラメル", zh: "焦糖、太妃糖、算了吧" },
+  { t: 205.310, jp: "疑心　自信　以心　鰊?(Whoo!)", zh: "疑心、自信、以心、鲱鱼？（Whoo!）" },
+  { t: 206.911, jp: "絶対的希望　夢中になる", zh: "绝对的希望，沉醉其中" },
+  { t: 210.359, jp: "単純明快正解　それはね?", zh: "简单明了的正确答案，是什么呢？" },
+  { t: 213.803, jp: "潜在的宇宙規模美少女です。", zh: "循光而来的宇宙规模美少女是也。" },
+  { t: 220.773, jp: "のじゃ　のじゃ　のじゃ", zh: "のじゃ　のじゃ　のじゃ" },
+  { t: 222.410, jp: "なのじゃ　のじゃ　のじゃ", zh: "なのじゃ　のじゃ　のじゃ" },
+  { t: 223.868, jp: "(いえーい!)", zh: "（耶！）" },
+];
+
+const audio = document.getElementById('audio');
+const lyricsWrap = document.getElementById('lyricsWrap');
+const progressFill = document.getElementById('progressFill');
+const timeDisplay = document.getElementById('timeDisplay');
+const playIcon = document.getElementById('playIcon');
+
+const playPath = "M8 5v14l11-7z";
+const pausePath = "M6 19h4V5H6v14zm8-14v14h4V5h-4z";
+
+// Build lyric DOM
+lyrics.forEach((line, i) => {
+  const block = document.createElement('div');
+  block.className = 'lyric-block';
+  block.id = `line-${i}`;
+  block.innerHTML = `<div class="lyric-jp">${line.jp}</div><div class="lyric-zh">${line.zh}</div>`;
+  block.onclick = () => { audio.currentTime = line.t; audio.play(); };
+  lyricsWrap.appendChild(block);
+});
+
+function fmt(s) {
+  const m = Math.floor(s / 60);
+  const sec = Math.floor(s % 60).toString().padStart(2, '0');
+  return `${m}:${sec}`;
+}
+
+let currentLine = -1;
+
+audio.addEventListener('timeupdate', () => {
+  const t = audio.currentTime;
+  const dur = audio.duration || 0;
+
+  // Progress
+  progressFill.style.width = dur ? `${(t / dur) * 100}%` : '0%';
+  timeDisplay.textContent = `${fmt(t)} / ${fmt(dur)}`;
+
+  // Active line
+  let active = -1;
+  for (let i = lyrics.length - 1; i >= 0; i--) {
+    if (t >= lyrics[i].t) { active = i; break; }
+  }
+
+  if (active !== currentLine) {
+    if (currentLine >= 0) document.getElementById(`line-${currentLine}`)?.classList.remove('active');
+    if (active >= 0) {
+      const el = document.getElementById(`line-${active}`);
+      el?.classList.add('active');
+      el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    currentLine = active;
+  }
+});
+
+function togglePlay() {
+  if (audio.paused) {
+    audio.play();
+    playIcon.setAttribute('d', pausePath);
+  } else {
+    audio.pause();
+    playIcon.setAttribute('d', playPath);
+  }
+}
+
+audio.addEventListener('ended', () => {
+  playIcon.setAttribute('d', playPath);
+});
+
+function seek(e) {
+  const bar = document.getElementById('progressBar');
+  const rect = bar.getBoundingClientRect();
+  const ratio = (e.clientX - rect.left) / rect.width;
+  audio.currentTime = ratio * (audio.duration || 0);
+}
+</script>
+```
+
+

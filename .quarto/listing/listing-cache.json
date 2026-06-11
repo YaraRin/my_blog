@@ -38,6 +38,24 @@
     ],
     "posts\\research\\elsword_dantelion_debug\\index.qmd": [
       "../../../posts"
+    ],
+    "posts\\gaming\\dies_irae\\log_00.qmd": [
+      "../../../posts"
+    ],
+    "posts\\gaming\\elsword\\Noah_Translation.qmd": [
+      "../../../posts"
+    ],
+    "posts\\gaming\\SF6\\ingrid.qmd": [
+      "../../../posts"
+    ],
+    "posts\\research\\game_regulation\\game-regulation-blog.qmd": [
+      "../../../posts"
+    ],
+    "posts\\story\\diary\\diary_01\\diary_02.qmd": [
+      "../../../../posts"
+    ],
+    "posts\\story\\diary\\diary_02\\paint_and_AI.qmd": [
+      "../../../../posts"
     ]
   }
 }
