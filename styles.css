@@ -1,123 +1,98 @@
+/* ── 字体：霞鹜文楷 ── */
 
-:root {
-  --bg-color: #fdfdfb;        
-  --text-color: #2c3e50;      
-  --secondary-text: #555;
-  --border-color: #333;
-  --blockquote-bg: #f1f1f1;
+body, p, li, blockquote, .card-text, .description {
+  font-family: "LXGW WenKai", "霞鹜文楷", serif;
 }
 
-/* 暗色模式下，保持字体不变，只换底色 */
-.quarto-dark {
-  --bg-color: #1a1a1a;        
-  --text-color: #e0e0e0;      
-  --secondary-text: #999;
-  --border-color: #444;       
-  --blockquote-bg: #252525;
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.nav-link {
+  font-family: "LXGW WenKai", "霞鹜文楷", serif;
+  letter-spacing: 0.02em;
 }
 
-/* 2. 核心：全局应用指定的字体栈 */
-body {
-  /* 恢复 EB Garamond 组合 */
-  font-family: "EB Garamond", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.7; /* 衬线体稍微加点行间距，阅读感更好 */
-  -webkit-font-smoothing: antialiased; /* 让宋体在屏幕上更锐利一点 */
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* ── 文章卡片 hover 动效 ── */
+.quarto-grid-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-/* 让标题也统一成宋体，增加厚重感 */
-h1, h2, h3, h4, .listing-title, .navbar-brand {
-  font-family: "Source Han Serif SC", "Noto Serif CJK SC", serif;
-  font-weight: 700;
+.quarto-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* 3. 让《暗淡蓝点》的仪式感跨越昼夜 */
-blockquote {
-  border-left: 3px solid var(--border-color);
-  padding: 1rem 1.5rem;
-  font-style: italic;
-  color: var(--secondary-text);
-  background: var(--blockquote-bg);
-  border-radius: 4px;
-  margin: 1.5em 0;
+/* 暗色模式卡片阴影 */
+[data-bs-theme="dark"] .quarto-grid-item:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* 4. 导航栏：消除“白顶”整蛊 */
-.navbar {
-  border-bottom: 1.5px solid var(--border-color) !important;
-  /* 确保导航栏背景透明或跟随主题 */
-  background-color: var(--bg-color) !important; 
+/* 卡片封面图过渡 */
+.quarto-grid-item img {
+  transition: transform 0.3s ease;
 }
 
-/* 5. 网格卡片与描述：保持极简秩序 */
-.card {
-  border: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-}
-
-.listing-title {
-  font-family: "Source Han Serif SC", serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-top: 10px;
-  margin-bottom: 2px;
-  color: var(--text-color);
-}
-
-.listing-description {
-  font-size: 0.85rem;
-  color: var(--secondary-text);
-  line-height: 1.5;
-  margin-top: 5px;
-  font-style: italic; /* 萨根式的语录感 */
-}
-
-/* 6. 交互动画 */
-.quarto-listing-container-grid .grid-item .thumbnail img {
-  object-fit: cover;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.quarto-listing-container-grid .grid-item:hover .thumbnail img {
+.quarto-grid-item:hover img {
   transform: scale(1.03);
 }
 
-/* 针对暗色模式图片的亮度降噪 */
-.quarto-dark img {
-  filter: brightness(0.85) contrast(1.1);
-}
-.quarto-dark img:hover {
-  filter: brightness(1);
-}
-
-
-/* 1. 确保所有核心容器都继承变量背景 */
-#quarto-content, 
-.quarto-container, 
-main, 
-.page-columns, 
-#title-block-header,
-.quarto-title-block {
-  background-color: var(--bg-color) !important;
-  color: var(--text-color) !important;
-  transition: background-color 0.3s ease;
-}
-
-/* 2. 专门对付文章顶部的标题块 */
-header.quarto-title-block.default .quarto-title-meta {
-  color: var(--secondary-text);
+/* ── 返回顶部按钮 ── */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bs-primary, #0d6efd);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* 3. 修复文章页面的边栏 */
-.sidebar, .nav-page {
-  background-color: var(--bg-color) !important;
+#back-to-top.visible {
+  opacity: 0.85;
+  transform: translateY(0);
 }
 
-/* 4. 代码块确保它们在亮色模式下也不会太突兀 */
-pre, code {
-  background-color: var(--blockquote-bg) !important;
-  color: var(--text-color) !important;
+#back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* ── 目录高亮跟随 ── */
+#TOC .nav-link {
+  transition: color 0.2s ease, border-left 0.2s ease;
+  border-left: 2px solid transparent;
+  padding-left: 0.5rem;
+}
+
+#TOC .nav-link.active {
+  color: var(--bs-primary, #0d6efd) !important;
+  border-left: 2px solid var(--bs-primary, #0d6efd);
+  font-weight: 500;
+}
+
+/* ── 细节润色 ── */
+/* blockquote 样式 */
+blockquote {
+  border-left: 3px solid var(--bs-primary, #0d6efd);
+  padding-left: 1rem;
+  color: var(--bs-secondary-color, #6c757d);
+  font-style: italic;
+}
+
+/* 正文行距 */
+article p {
+  line-height: 1.9;
 }

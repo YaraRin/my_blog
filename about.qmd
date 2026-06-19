@@ -3,10 +3,10 @@ title: "Archive / 档案"
 image: profile.png 
 about:
   template: jolla
-  links:
-    - icon: chat-dots
-      text: Weibo
-      href: https://weibo.com/7928287679
+links:
+    - icon: chat-square-dots
+      text: 匿名提问
+      href: ask.qmd        
     - icon: microsoft
       text: Outlook
       href: mailto:GreenwichintheSky@outlook.com

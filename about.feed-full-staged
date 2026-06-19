@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>A Small Stage</title>
+<link>https://YaraRin.github.io/my_blog/about.html</link>
+<atom:link href="https://YaraRin.github.io/my_blog/about.xml" rel="self" type="application/rss+xml"/>
+<description>位我上者，灿烂星空；道德律令，赠与清风~</description>
+<image>
+<url>https://YaraRin.github.io/my_blog/profile.png</url>
+<title>A Small Stage</title>
+<link>https://YaraRin.github.io/my_blog/about.html</link>
+<height>103</height>
+<width>144</width>
+</image>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Sat, 13 Jun 2026 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/story/diary/diary_03/ST_01.html}</title>
+  <dc:creator>Els_Backup </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/story/diary/diary_03/ST_01.html</link>
+  <description>{B4F502887207:/posts/story/diary/diary_03/ST_01.html}</description>
+  <category>Story</category>
+  <category>Elsword</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/story/diary/diary_03/ST_01.html</guid>
+  <pubDate>Sat, 13 Jun 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/story/diary/diary_03/cover.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/gaming/SF6/ingrid.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/gaming/SF6/ingrid.html</link>
+  <description>{B4F502887207:/posts/gaming/SF6/ingrid.html}</description>
+  <category>Gaming</category>
+  <category>Translation</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/gaming/SF6/ingrid.html</guid>
+  <pubDate>Wed, 10 Jun 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/gaming/SF6/cover.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/gaming/elsword/Noah_Translation.html}</title>
+  <dc:creator>Els_Backup </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/gaming/elsword/Noah_Translation.html</link>
+  <description>{B4F502887207:/posts/gaming/elsword/Noah_Translation.html}</description>
+  <category>Gaming</category>
+  <category>Translation</category>
+  <category>Elsword</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/gaming/elsword/Noah_Translation.html</guid>
+  <pubDate>Sat, 06 Jun 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/gaming/elsword/cover.png" medium="image" type="image/png" height="88" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/story/diary/diary_02/paint_and_AI.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/story/diary/diary_02/paint_and_AI.html</link>
+  <description>{B4F502887207:/posts/story/diary/diary_02/paint_and_AI.html}</description>
+  <category>Story</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/story/diary/diary_02/paint_and_AI.html</guid>
+  <pubDate>Mon, 01 Jun 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/story/diary/diary_02/images/cover.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/research/game_regulation/game-regulation-blog.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/research/game_regulation/game-regulation-blog.html</link>
+  <description>{B4F502887207:/posts/research/game_regulation/game-regulation-blog.html}</description>
+  <category>Research</category>
+  <category>Gaming</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/research/game_regulation/game-regulation-blog.html</guid>
+  <pubDate>Sun, 31 May 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/research/game_regulation/black_sony.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/story/diary/diary_01/diary_02.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/story/diary/diary_01/diary_02.html</link>
+  <description>{B4F502887207:/posts/story/diary/diary_01/diary_02.html}</description>
+  <category>Story</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/story/diary/diary_01/diary_02.html</guid>
+  <pubDate>Wed, 27 May 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/story/diary/diary_01/images/cover.png" medium="image" type="image/png" height="91" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/gaming/dies_irae/log_00.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/gaming/dies_irae/log_00.html</link>
+  <description>{B4F502887207:/posts/gaming/dies_irae/log_00.html}</description>
+  <category>Gaming</category>
+  <category>Translation</category>
+  <category>Story</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/gaming/dies_irae/log_00.html</guid>
+  <pubDate>Sat, 09 May 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/gaming/dies_irae/cover.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/research/elsword_dantelion_debug/index.html}</title>
+  <dc:creator>Els_Backup </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/research/elsword_dantelion_debug/</link>
+  <description>{B4F502887207:/posts/research/elsword_dantelion_debug/index.html}</description>
+  <category>Research</category>
+  <category>Gaming</category>
+  <category>Analysis</category>
+  <category>Elsword</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/research/elsword_dantelion_debug/</guid>
+  <pubDate>Fri, 08 May 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/research/elsword_dantelion_debug/cover.png" medium="image" type="image/png" height="118" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/gaming/meta_demo/log_00.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/gaming/meta_demo/log_00.html</link>
+  <description>{B4F502887207:/posts/gaming/meta_demo/log_00.html}</description>
+  <category>Godot</category>
+  <category>Gaming</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/gaming/meta_demo/log_00.html</guid>
+  <pubDate>Wed, 06 May 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/gaming/meta_demo/cover.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/story/diary/diary_00/diary_00.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/story/diary/diary_00/diary_00.html</link>
+  <description>{B4F502887207:/posts/story/diary/diary_00/diary_00.html}</description>
+  <category>Story</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/story/diary/diary_00/diary_00.html</guid>
+  <pubDate>Sun, 03 May 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/story/diary/diary_00/images/cover.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/research/secret_sealing_club/no_existence.html}</title>
+  <dc:creator>Els_Backup </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/research/secret_sealing_club/no_existence.html</link>
+  <description>{B4F502887207:/posts/research/secret_sealing_club/no_existence.html}</description>
+  <category>Research</category>
+  <category>Gaming</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/research/secret_sealing_club/no_existence.html</guid>
+  <pubDate>Sun, 19 Apr 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/research/secret_sealing_club/GFC_cover.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/gaming/draft/Nine_sols_like_Observation_Log.html}</title>
+  <dc:creator>Yara </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/gaming/draft/Nine_sols_like_Observation_Log.html</link>
+  <description>{B4F502887207:/posts/gaming/draft/Nine_sols_like_Observation_Log.html}</description>
+  <guid>https://YaraRin.github.io/my_blog/posts/gaming/draft/Nine_sols_like_Observation_Log.html</guid>
+  <pubDate>Sat, 18 Apr 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/gaming/draft/imago_iterata_cover.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/research/guilty_gear/asuka.html}</title>
+  <dc:creator>怎会如此呢 </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/research/guilty_gear/asuka.html</link>
+  <description>{B4F502887207:/posts/research/guilty_gear/asuka.html}</description>
+  <category>Gaming</category>
+  <category>Analysis</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/research/guilty_gear/asuka.html</guid>
+  <pubDate>Sun, 12 Apr 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/research/guilty_gear/asuka_cover.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/scifi/EnJoe_Toh/Self_Reference_Engine.html}</title>
+  <dc:creator>What&#39;s Up</dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/scifi/EnJoe_Toh/Self_Reference_Engine.html</link>
+  <description>{B4F502887207:/posts/scifi/EnJoe_Toh/Self_Reference_Engine.html}</description>
+  <category>Scifi</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/scifi/EnJoe_Toh/Self_Reference_Engine.html</guid>
+  <pubDate>Sun, 05 Apr 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/scifi/EnJoe_Toh/EnJoe_Toh.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/research/elsword_clamor_analysis/index.html}</title>
+  <dc:creator>Els_Backup </dc:creator>
+  <link>https://YaraRin.github.io/my_blog/posts/research/elsword_clamor_analysis/</link>
+  <description>{B4F502887207:/posts/research/elsword_clamor_analysis/index.html}</description>
+  <category>Research</category>
+  <category>Gaming</category>
+  <category>Analysis</category>
+  <category>Elsword</category>
+  <guid>https://YaraRin.github.io/my_blog/posts/research/elsword_clamor_analysis/</guid>
+  <pubDate>Wed, 25 Mar 2026 16:00:00 GMT</pubDate>
+  <media:content url="https://YaraRin.github.io/my_blog/posts/research/elsword_clamor_analysis/all_nonsense.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>

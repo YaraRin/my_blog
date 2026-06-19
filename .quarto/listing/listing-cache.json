@@ -3,59 +3,26 @@
     "about.qmd": [
       "posts"
     ],
+    "ask.qmd": [
+      "posts"
+    ],
     "index.qmd": [
       "posts"
     ],
-    "posts\\post-with-code\\index.qmd": [
-      "../../posts"
-    ],
-    "posts\\research\\elsword_clamor_analysis\\index.qmd": [
-      "../../../posts"
-    ],
-    "posts\\welcome\\index.qmd": [
-      "../../posts"
-    ],
-    "posts\\scifi\\EnJoe_Toh\\Self_Reference_Engine.qmd": [
+    "posts\\gaming\\dies_irae\\log_00.qmd": [
       "../../../posts"
     ],
     "posts\\gaming\\draft\\Nine_sols_like_Observation_Log.qmd": [
       "../../../posts"
     ],
-    "posts\\research\\guilty_gear\\asuka.qmd": [
-      "../../../posts"
-    ],
-    "posts\\research\\secret_sealing_club\\no_existence.qmd": [
-      "../../../posts"
-    ],
-    "posts\\story\\diary\\diary_00\\diary_00.qmd": [
-      "../../../../posts"
-    ],
-    "posts\\story\\unpacked_story\\no_existence_kami.qmd": [
+    "posts\\gaming\\elsword\\Noah_Translation.qmd": [
       "../../../posts"
     ],
     "posts\\gaming\\meta_demo\\log_00.qmd": [
       "../../../posts"
     ],
-    "posts\\research\\elsword_dantelion_debug\\index.qmd": [
-      "../../../posts"
-    ],
-    "posts\\gaming\\dies_irae\\log_00.qmd": [
-      "../../../posts"
-    ],
-    "posts\\gaming\\elsword\\Noah_Translation.qmd": [
-      "../../../posts"
-    ],
     "posts\\gaming\\SF6\\ingrid.qmd": [
       "../../../posts"
-    ],
-    "posts\\research\\game_regulation\\game-regulation-blog.qmd": [
-      "../../../posts"
-    ],
-    "posts\\story\\diary\\diary_01\\diary_02.qmd": [
-      "../../../../posts"
-    ],
-    "posts\\story\\diary\\diary_02\\paint_and_AI.qmd": [
-      "../../../../posts"
     ]
   }
 }
