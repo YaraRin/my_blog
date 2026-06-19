@@ -24,7 +24,7 @@ website:
         href: about.qmd
       - icon: chat-square-dots
         href: ask.qmd
-        aria-label: "匿名提问箱"
+        aria-label: "AMA"
       - icon: envelope
         href: mailto:GreenwichintheSky@outlook.com
 

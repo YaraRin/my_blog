@@ -3,16 +3,17 @@ title: "Archive / 档案"
 image: profile.png 
 about:
   template: jolla
-links:
+  links:
     - icon: chat-square-dots
-      text: 匿名提问
-      href: ask.qmd        
+      text: Ask me
+      href: ask.qmd
     - icon: microsoft
       text: Outlook
       href: mailto:GreenwichintheSky@outlook.com
     - icon: rss
       text: RSS
       href: index.xml
+listing: false
 ---
 
 找个地方养赛博花园，再不济还能改成赛博种菜，大概。

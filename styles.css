@@ -12,28 +12,28 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ── 文章卡片 hover 动效 ── */
-.quarto-grid-item {
+.g-col-1 {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.quarto-grid-item:hover {
+.g-col-1:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* 暗色模式卡片阴影 */
-[data-bs-theme="dark"] .quarto-grid-item:hover {
+[data-bs-theme="dark"] .g-col-1:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* 卡片封面图过渡 */
-.quarto-grid-item img {
+.g-col-1 img {
   transition: transform 0.3s ease;
 }
 
-.quarto-grid-item:hover img {
+.g-col-1:hover img {
   transform: scale(1.03);
 }
 
