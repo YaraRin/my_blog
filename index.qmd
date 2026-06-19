@@ -1,6 +1,6 @@
 ---
 title: "摸鱼DJ| 谁有多余的时间 "
-subtitle: ""The Earth is a very small stage in a vast cosmic arena.""
+subtitle: '"The Earth is a very small stage in a vast cosmic arena."'
 listing:
   contents: posts
   sort: "date desc"
