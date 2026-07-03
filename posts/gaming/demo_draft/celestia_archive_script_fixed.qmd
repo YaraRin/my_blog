@@ -1,19 +1,18 @@
 ---
 title: "二周目剧本留档"
 author: "Els_Backup"
-image: "meta_demo_cover.jpg" 
+image: "meta_demo_cover.jpg"
 date: "2026-07-03"
 categories: [Gaming, Elsword]
 description: "这下真成只有一个人记得了"
 format:
-html:
-toc: true
-toc-location: left
-number-sections: true
-mainfont: "Segoe UI"
-embed-resources: true
----------------------
-
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+    mainfont: "Segoe UI"
+    embed-resources: true
+---
 ## 引子
 
 之前两个月业余做了一个 Meta 解谜 demo，原本预计是七月底做完，但出于各种考量，以现在这个形式来讲，我选择到此为止了。
