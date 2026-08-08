@@ -1,27 +1,12 @@
 {
   "listingMap": {
-    "about.qmd": [
-      "posts"
-    ],
-    "ask.qmd": [
-      "posts"
-    ],
     "index.qmd": [
       "posts"
     ],
-    "posts\\gaming\\dies_irae\\log_00.qmd": [
-      "../../../posts"
-    ],
-    "posts\\gaming\\draft\\Nine_sols_like_Observation_Log.qmd": [
-      "../../../posts"
-    ],
-    "posts\\gaming\\elsword\\Noah_Translation.qmd": [
+    "posts\\gaming\\demo_draft\\celestia_archive_script_fixed.qmd": [
       "../../../posts"
     ],
     "posts\\gaming\\meta_demo\\log_00.qmd": [
-      "../../../posts"
-    ],
-    "posts\\gaming\\SF6\\ingrid.qmd": [
       "../../../posts"
     ]
   }

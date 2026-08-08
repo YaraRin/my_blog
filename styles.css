@@ -1,98 +1,610 @@
-/* ── 字体：霞鹜文楷 ── */
+/*
+ * A Small Stage
+ * Dark-first reading theme layered on Quarto's native Cosmo/Darkly themes.
+ * Quarto keeps ownership of layout, color switching, syntax highlighting,
+ * code tools, callouts, listings, and the responsive table of contents.
+ */
 
-body, p, li, blockquote, .card-text, .description {
-  font-family: "LXGW WenKai", "霞鹜文楷", serif;
+:root {
+  --blog-font-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --blog-font-reading: "LXGW WenKai", "霞鹜文楷", "Noto Serif SC",
+    "Source Han Serif SC", serif;
+  --blog-font-mono: "Cascadia Code", "SFMono-Regular", Consolas,
+    "Liberation Mono", monospace;
+  --blog-content-width: 760px;
+  --blog-page-width: 1280px;
+  --blog-toc-width: 238px;
+  --blog-radius-sm: 6px;
+  --blog-radius-md: 10px;
+  --blog-radius-lg: 14px;
+  --blog-bg: #f6f8fa;
+  --blog-surface: #ffffff;
+  --blog-surface-muted: #f3f5f7;
+  --blog-text: #24292f;
+  --blog-text-muted: #66707d;
+  --blog-heading: #17202a;
+  --blog-border: #d8dee4;
+  --blog-border-soft: #e8ebef;
+  --blog-accent: #0969da;
+  --blog-accent-hover: #0550ae;
+  --blog-accent-soft: rgba(9, 105, 218, 0.1);
+  --blog-code-bg: #f6f8fa;
+  --blog-quote-bg: #f6f8fa;
+  --blog-shadow: 0 10px 28px rgba(31, 35, 40, 0.08);
 }
 
-h1, h2, h3, h4, h5, h6,
+body.quarto-dark,
+[data-bs-theme="dark"] {
+  --blog-bg: #0d1117;
+  --blog-surface: #161b22;
+  --blog-surface-muted: #1c2129;
+  --blog-text: #c9d1d9;
+  --blog-text-muted: #8b949e;
+  --blog-heading: #e6edf3;
+  --blog-border: #30363d;
+  --blog-border-soft: #21262d;
+  --blog-accent: #79b8ff;
+  --blog-accent-hover: #a5d0ff;
+  --blog-accent-soft: rgba(121, 184, 255, 0.12);
+  --blog-code-bg: #11161d;
+  --blog-quote-bg: #151b23;
+  --blog-shadow: 0 12px 32px rgba(0, 0, 0, 0.32);
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--blog-bg);
+  color: var(--blog-text);
+  font-family: var(--blog-font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.quarto-dark {
+  color-scheme: dark;
+}
+
+/* Reading column and overall page rhythm */
+.quarto-container.page-columns {
+  max-width: var(--blog-page-width);
+}
+
+main.content {
+  min-width: 0;
+}
+
+main#quarto-document-content > :where(p, ul, ol, dl),
+main#quarto-document-content blockquote {
+  font-family: var(--blog-font-reading);
+  font-size: 1.075rem;
+}
+
+main#quarto-document-content > p {
+  line-height: 1.9;
+  margin-bottom: 1.15rem;
+}
+
+@media (min-width: 992px) {
+  .page-layout-full main#quarto-document-content:not(.column-screen-inset-shaded) {
+    max-width: var(--blog-content-width);
+  }
+
+  /* Keep the homepage grid wide; article pages only contain an empty listing. */
+  .page-layout-full main#quarto-document-content:has(#listing-listing .g-col-1) {
+    max-width: none;
+  }
+
+  #quarto-margin-sidebar {
+    width: var(--blog-toc-width);
+  }
+}
+
+/* Interface typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
 .navbar-brand,
-.nav-link {
-  font-family: "LXGW WenKai", "霞鹜文楷", serif;
-  letter-spacing: 0.02em;
+.nav-link,
+.quarto-title-meta,
+.quarto-category,
+.listing-category,
+#TOC {
+  font-family: var(--blog-font-sans);
 }
 
-/* ── 文章卡片 hover 动效 ── */
-.g-col-1 {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  border-radius: 10px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blog-heading);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  line-height: 1.32;
+  scroll-margin-top: 5.2rem;
+}
+
+h1.title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 720;
+  letter-spacing: -0.025em;
+}
+
+main#quarto-document-content h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.42rem;
+  border-bottom: 1px solid var(--blog-border);
+  font-size: 1.62rem;
+}
+
+main#quarto-document-content h3 {
+  margin-top: 2.15rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+main#quarto-document-content h4 {
+  margin-top: 1.7rem;
+  font-size: 1.1rem;
+}
+
+.header-section-number {
+  color: var(--blog-text-muted);
+  font-weight: 550;
+}
+
+/* Title metadata and reading time */
+.quarto-title-meta {
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--blog-border-soft);
+  color: var(--blog-text-muted);
+}
+
+.quarto-title-meta-heading {
+  color: var(--blog-text-muted);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.quarto-title-meta-contents,
+.quarto-title-meta-contents p,
+.quarto-title-meta-contents .date,
+.quarto-title-meta-contents .reading-time {
+  color: var(--blog-text);
+  font-family: var(--blog-font-sans);
+  font-size: 0.88rem;
+}
+
+/* Links */
+main#quarto-document-content a:not(.btn):not(.nav-link):not(.quarto-category),
+.description a {
+  color: var(--blog-accent);
+  text-decoration-color: color-mix(in srgb, var(--blog-accent) 48%, transparent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+  transition: color 0.16s ease, text-decoration-color 0.16s ease;
+}
+
+main#quarto-document-content a:not(.btn):not(.nav-link):hover,
+.description a:hover {
+  color: var(--blog-accent-hover);
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--blog-accent);
+  outline-offset: 3px;
+}
+
+/* Table of contents: Quarto retains scrolling and responsive collapse */
+#quarto-margin-sidebar {
+  color: var(--blog-text-muted);
+}
+
+#TOC {
+  max-height: calc(100vh - 7rem);
+  overflow-y: auto;
+  padding: 0.25rem 0.45rem 1rem 0.15rem;
+  scrollbar-color: var(--blog-border) transparent;
+  scrollbar-width: thin;
+}
+
+#TOC #toc-title,
+#TOC > h2 {
+  margin: 0 0 0.75rem;
+  color: var(--blog-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+#TOC .nav-link {
+  border-left: 2px solid transparent;
+  border-radius: 0 var(--blog-radius-sm) var(--blog-radius-sm) 0;
+  color: var(--blog-text-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  padding: 0.3rem 0.55rem 0.3rem 0.72rem;
+  transition: color 0.16s ease, background-color 0.16s ease,
+    border-color 0.16s ease;
+}
+
+#TOC .nav-link:hover {
+  background: var(--blog-surface-muted);
+  color: var(--blog-text);
+}
+
+#TOC .nav-link.active {
+  background: var(--blog-accent-soft);
+  border-left-color: var(--blog-accent);
+  color: var(--blog-accent) !important;
+  font-weight: 650;
+}
+
+#TOC ul ul .nav-link {
+  padding-left: 1.25rem;
+  font-size: 0.78rem;
+}
+
+/* Blockquotes and Quarto callouts */
+blockquote {
+  margin: 1.55rem 0;
+  padding: 0.95rem 1.15rem;
+  border: 1px solid var(--blog-border-soft);
+  border-left: 4px solid var(--blog-accent);
+  border-radius: 0 var(--blog-radius-md) var(--blog-radius-md) 0;
+  background: var(--blog-quote-bg);
+  color: var(--blog-text);
+  font-style: normal;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.callout {
   overflow: hidden;
+  border-radius: var(--blog-radius-md);
+  box-shadow: none;
 }
 
-.g-col-1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+/* Code: preserve Quarto syntax tokens and native controls */
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--blog-font-mono);
 }
 
-/* 暗色模式卡片阴影 */
-[data-bs-theme="dark"] .g-col-1:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+:not(pre) > code {
+  margin: 0 0.08em;
+  padding: 0.14em 0.38em;
+  border: 1px solid var(--blog-border-soft);
+  border-radius: 5px;
+  background: var(--blog-surface-muted);
+  color: var(--blog-heading);
+  font-size: 0.88em;
 }
 
-/* 卡片封面图过渡 */
-.g-col-1 img {
-  transition: transform 0.3s ease;
+div.sourceCode,
+.cell-output pre,
+pre.sourceCode {
+  border-color: var(--blog-border) !important;
+  border-radius: var(--blog-radius-md);
+  background: var(--blog-code-bg);
 }
 
-.g-col-1:hover img {
-  transform: scale(1.03);
+pre.sourceCode,
+.cell-output pre {
+  padding: 1rem 1.05rem;
+  font-size: 0.88rem;
+  line-height: 1.62;
+  scrollbar-color: var(--blog-border) transparent;
+  scrollbar-width: thin;
 }
 
-/* ── 返回顶部按钮 ── */
+details.code-fold {
+  margin: 1.2rem 0;
+  border: 1px solid var(--blog-border);
+  border-radius: var(--blog-radius-md);
+  background: var(--blog-code-bg);
+}
+
+details.code-fold > summary {
+  padding: 0.58rem 0.85rem;
+  color: var(--blog-text-muted);
+  font-family: var(--blog-font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.code-copy-button {
+  top: 0.48rem;
+  right: 0.48rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid transparent;
+  border-radius: var(--blog-radius-sm);
+  color: var(--blog-text-muted);
+  opacity: 0.28;
+  transition: opacity 0.16s ease, color 0.16s ease,
+    background-color 0.16s ease, border-color 0.16s ease;
+}
+
+div.sourceCode:hover > .code-copy-button,
+.code-copy-button:focus-visible,
+.code-copy-button.code-copy-button-checked {
+  border-color: var(--blog-border);
+  background: var(--blog-surface);
+  color: var(--blog-accent);
+  opacity: 1;
+}
+
+/* Images, figures, captions and tables */
+main#quarto-document-content img:not(.lightbox-gallery img),
+main#quarto-document-content figure img,
+.lightbox-gallery img {
+  border-radius: var(--blog-radius-md);
+}
+
+main#quarto-document-content figure img {
+  border: 1px solid var(--blog-border-soft);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+figcaption,
+.figure-caption,
+.table-caption {
+  margin-top: 0.55rem;
+  color: var(--blog-text-muted);
+  font-family: var(--blog-font-sans);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--blog-text);
+  --bs-table-border-color: var(--blog-border);
+}
+
+/* Categories and tag filters */
+.quarto-title .quarto-categories,
+.quarto-listing-category {
+  gap: 0.45rem;
+}
+
+.quarto-category,
+.quarto-listing-category .category,
+.listing-category {
+  border: 1px solid var(--blog-border) !important;
+  border-radius: 999px !important;
+  background: var(--blog-surface-muted);
+  color: var(--blog-text-muted) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.22rem 0.65rem !important;
+  text-transform: none !important;
+  transition: color 0.16s ease, border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+
+.quarto-category:hover,
+.quarto-listing-category .category:hover,
+.quarto-listing-category .category.active,
+.listing-category:hover {
+  border-color: var(--blog-accent) !important;
+  background: var(--blog-accent-soft);
+  color: var(--blog-accent) !important;
+}
+
+.quarto-listing-category-title {
+  color: var(--blog-heading);
+  font-family: var(--blog-font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.quarto-category-count {
+  color: inherit;
+  opacity: 0.72;
+}
+
+/* Homepage listing cards */
+.quarto-listing-container-grid .list {
+  gap: 1.35rem;
+}
+
+.quarto-grid-item.card,
+.quarto-listing-container-grid .card {
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid var(--blog-border-soft);
+  border-radius: var(--blog-radius-lg);
+  background: var(--blog-surface);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.quarto-grid-item.card:hover,
+.quarto-listing-container-grid .card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--blog-accent) 45%, var(--blog-border));
+  box-shadow: var(--blog-shadow);
+}
+
+.quarto-grid-item .card-img-top,
+.quarto-listing-container-grid .card img {
+  border-radius: 0;
+  transition: transform 0.35s ease;
+}
+
+.quarto-grid-item.card:hover .card-img-top,
+.quarto-listing-container-grid .card:hover img {
+  transform: scale(1.025);
+}
+
+.quarto-grid-item .card-body,
+.quarto-listing-container-grid .card-body {
+  padding: 1rem 1.05rem 1.1rem;
+}
+
+.quarto-grid-item .card-title,
+.quarto-listing-container-grid .card-title {
+  color: var(--blog-heading);
+  font-family: var(--blog-font-sans);
+  font-size: 1.05rem;
+  font-weight: 680;
+  line-height: 1.42;
+}
+
+.quarto-grid-item .card-text,
+.quarto-listing-container-grid .description {
+  color: var(--blog-text-muted);
+  font-family: var(--blog-font-reading);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.listing-date,
+.listing-author,
+.listing-reading-time,
+.card-attribution {
+  color: var(--blog-text-muted) !important;
+  font-family: var(--blog-font-sans);
+  font-size: 0.76rem;
+}
+
+.listing-reading-time::before {
+  content: "约 ";
+}
+
+.margin-sidebar > div:first-child {
+  color: var(--blog-text-muted);
+}
+
+.margin-sidebar > div:first-child a[style*="color"] {
+  color: var(--blog-text-muted) !important;
+}
+
+.margin-sidebar > div:first-child a[style*="color"]:hover {
+  color: var(--blog-accent) !important;
+}
+
+/* Navigation and utility button */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+  font-weight: 680;
+  letter-spacing: -0.01em;
+}
+
 #back-to-top {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--bs-primary, #0d6efd);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1rem;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--blog-border);
+  border-radius: 50%;
+  background: var(--blog-surface);
+  box-shadow: var(--blog-shadow);
+  color: var(--blog-accent);
+  cursor: pointer;
+  font-size: 1.05rem;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.22s ease, transform 0.22s ease,
+    background-color 0.16s ease;
 }
 
 #back-to-top.visible {
-  opacity: 0.85;
+  opacity: 0.88;
   transform: translateY(0);
 }
 
 #back-to-top:hover {
+  background: var(--blog-surface-muted);
   opacity: 1;
   transform: translateY(-2px);
 }
 
-/* ── 目录高亮跟随 ── */
-#TOC .nav-link {
-  transition: color 0.2s ease, border-left 0.2s ease;
-  border-left: 2px solid transparent;
-  padding-left: 0.5rem;
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  body {
+    font-size: 0.98rem;
+  }
+
+  main#quarto-document-content > :where(p, ul, ol, dl),
+  main#quarto-document-content blockquote {
+    font-size: 1.03rem;
+  }
+
+  #TOC {
+    max-height: none;
+    overflow: visible;
+  }
+
+  h1.title {
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  }
+
+  main#quarto-document-content h2 {
+    margin-top: 2.25rem;
+    font-size: 1.42rem;
+  }
 }
 
-#TOC .nav-link.active {
-  color: var(--bs-primary, #0d6efd) !important;
-  border-left: 2px solid var(--bs-primary, #0d6efd);
-  font-weight: 500;
+@media (max-width: 575.98px) {
+  .quarto-title-meta {
+    gap: 0.75rem;
+  }
+
+  blockquote {
+    padding: 0.8rem 0.9rem;
+  }
+
+  pre.sourceCode,
+  .cell-output pre {
+    font-size: 0.82rem;
+  }
 }
 
-/* ── 细节润色 ── */
-/* blockquote 样式 */
-blockquote {
-  border-left: 3px solid var(--bs-primary, #0d6efd);
-  padding-left: 1rem;
-  color: var(--bs-secondary-color, #6c757d);
-  font-style: italic;
-}
-
-/* 正文行距 */
-article p {
-  line-height: 1.9;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

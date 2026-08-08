@@ -41,6 +41,8 @@ format:
       dark: darkly
     dark-mode-switch: true
     page-layout: full
+    toc-depth: 3
+    smooth-scroll: true
     hover-footnotes: true
     date-format: "YYYY-MM-DD"
     css: styles.css
@@ -60,7 +62,9 @@ format:
         category-id: DIC_kwDORxBgz84C5_8x
         mapping: pathname
         reactions-enabled: true
-        theme: light
+        theme:
+          light: light
+          dark: dark
         language: zh-CN
 
 listing:
@@ -70,7 +74,7 @@ listing:
   image-height: 220px  
   grid-item-border: false 
   grid-item-align: left
-  fields: [image, title, date, categories, description] 
+  fields: [image, title, date, reading-time, categories, description]
   sort: "date desc"
   categories: true
   max-description-length: 50
