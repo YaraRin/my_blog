@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Archive / 档案 – A Small Stage</title>
+<title>A Small Stage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,11 +30,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -71,12 +74,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "搜索"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-date','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="A Small Stage" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -258,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Archive / 档案</span></a>
   </li>  
   <li class="nav-item">
@@ -276,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -301,42 +362,553 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<div class="stage-profile">
+<img src="profile.png" alt="Yara" class="stage-profile__avatar">
+<div class="stage-profile__name">
+YARA
+</div>
+<div class="stage-profile__links">
+<a href="ask.html" title="Ask me" aria-label="Ask me"><i class="bi bi-chat-square-dots"></i></a><a href="mailto:GreenwichintheSky@outlook.com" title="Email" aria-label="Email"><i class="bi bi-envelope-at"></i></a><a href="index.xml" title="RSS Feed" aria-label="RSS Feed"><i class="bi bi-rss"></i></a><a href="about.html" title="About" aria-label="About"><i class="bi bi-person-circle"></i></a>
+</div>
+</div>
+</div></div>
+        
+    <h5 class="quarto-listing-category-title">分类</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">全部 <span class="quarto-category-count">(18)</span></div><div class="category" data-category="QW5hbHlzaXM=">Analysis <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RWxzd29yZA==">Elsword <span class="quarto-category-count">(5)</span></div><div class="category" data-category="R2FtaW5n">Gaming <span class="quarto-category-count">(10)</span></div><div class="category" data-category="R29kb3Q=">Godot <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(4)</span></div><div class="category" data-category="U2NpZmk=">Scifi <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3Rvcnk=">Story <span class="quarto-category-count">(7)</span></div><div class="category" data-category="VHJhbnNsYXRpb24=">Translation <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-jolla column-page">
-  <img src="profile.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page-left" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Archive / 档案</h1>
+<h1 class="title">A Small Stage</h1>
+<p class="subtitle lead">“The Earth is a very small stage in a vast cosmic arena.”</p>
 </div>
-<div class="quarto-title-meta column-page">
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
   </div>
-</header><main class="content column-page" id="quarto-document-content">
-
-<p>找个地方养赛博花园，再不济还能改成赛博种菜，大概。</p>
+  
 
 
-<button id="back-to-top" aria-label="返回顶部" title="返回顶部">
+</header>
+
+
+<blockquote class="blockquote">
+<p>位我上者，灿烂星空；道德律令，付与清风~</p>
+</blockquote>
+<hr>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="R2FtaW5n" data-listing-date-sort="1786032000000" data-listing-file-modified-sort="1786162466118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
+<a href="./posts/gaming/dig_night/dig_night.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/gaming/dig_night/images/dig_night_cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+寻夜中被遗忘的另我
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Dig Night 游玩感想</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-08-07
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="U2NpZmklMkNTdG9yeQ==" data-listing-date-sort="1785254400000" data-listing-file-modified-sort="1785289242816" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<a href="./posts/scifi/draft/Unnamed_Text.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<!-- img(9CEB782EFEE6)[progressive=false, height=220px]:listing:posts/scifi/draft/Unnamed_Text.html -->
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+不存在的 Code
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2NpZmk='); return false;">Scifi</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>？</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-07-29
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="U3Rvcnk=" data-listing-date-sort="1785168000000" data-listing-file-modified-sort="1785288617269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<a href="./posts/story/diary/diary_04/diary_04.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/story/diary/diary_04/Hofstadter_Cover1.jpg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+规则、参数与涌现
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>可控箱庭真好玩是吧</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-07-28
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="R2FtaW5nJTJDRWxzd29yZA==" data-listing-date-sort="1783008000000" data-listing-file-modified-sort="1783071800420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="127">
+<a href="./posts/gaming/demo_draft/celestia_archive_script_fixed.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/gaming/demo_draft/meta_demo_cover.jpg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+二周目剧本留档
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxzd29yZA=='); return false;">Elsword</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>这下真成只有一个人记得了</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-07-03
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="U3RvcnklMkNFbHN3b3Jk" data-listing-date-sort="1781366400000" data-listing-file-modified-sort="1781857903894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<a href="./posts/story/diary/diary_03/ST_01.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/story/diary/diary_03/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+一场摸鱼引发的血案
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxzd29yZA=='); return false;">Elsword</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>哥们都不知道咋成风暴中心了</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-06-14
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="R2FtaW5nJTJDVHJhbnNsYXRpb24lMkNFbHN3b3Jk" data-listing-date-sort="1780761600000" data-listing-file-modified-sort="1780844996750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="109">
+<a href="./posts/gaming/elsword/Noah_Translation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/gaming/elsword/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+职业名翻译相关的一些想法
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhbnNsYXRpb24='); return false;">Translation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxzd29yZA=='); return false;">Elsword</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>小时候看到天穹亲王被吓哭了</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-06-07
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="U3Rvcnk=" data-listing-date-sort="1780329600000" data-listing-file-modified-sort="1780404790533" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<a href="./posts/story/diary/diary_02/paint_and_AI.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/story/diary/diary_02/images/cover.jpg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+照相机出来的时候，写实派们在想啥
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>关于AI运用争论的一点历史坐标</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-06-02
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="UmVzZWFyY2glMkNHYW1pbmc=" data-listing-date-sort="1780243200000" data-listing-file-modified-sort="1780326162268" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<a href="./posts/research/game_regulation/game-regulation-blog.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/research/game_regulation/black_sony.jpg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+微软收购案的反垄断审查
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>索尼罪恶滔天，都是索尼的错！</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-06-01
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="U3Rvcnk=" data-listing-date-sort="1779897600000" data-listing-file-modified-sort="1779981737889" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="537">
+<a href="./posts/story/diary/diary_01/diary_02.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/story/diary/diary_01/images/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+何谓才能
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>我是边缘人，我也不知道</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-05-28
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="R2FtaW5nJTJDVHJhbnNsYXRpb24lMkNTdG9yeQ==" data-listing-date-sort="1778342400000" data-listing-file-modified-sort="1780840175987" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2243">
+<a href="./posts/gaming/dies_irae/log_00.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/gaming/dies_irae/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Dies Irae ED歌词翻译存档
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhbnNsYXRpb24='); return false;">Translation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>为被拣选之伶人，献此至高之歌剧——</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-05-10
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="UmVzZWFyY2glMkNHYW1pbmclMkNBbmFseXNpcyUyQ0Vsc3dvcmQ=" data-listing-date-sort="1778256000000" data-listing-file-modified-sort="1778380555960" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<a href="./posts/research/elsword_dantelion_debug/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/research/elsword_dantelion_debug/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+从所罗门魔神到摸鱼学者
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXM='); return false;">Analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxzd29yZA=='); return false;">Elsword</div>
+
+</div>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=50]:posts/research/elsword_dantelion_debug/index.html -->
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-05-09
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="R29kb3QlMkNHYW1pbmc=" data-listing-date-sort="1778083200000" data-listing-file-modified-sort="1778334146110" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<a href="./posts/gaming/meta_demo/log_00.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/gaming/meta_demo/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+meta解谜demo点击检测问题排查过程
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R29kb3Q='); return false;">Godot</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>为啥你家壁纸点了没反应呢莫小眠</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-05-07
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="U3Rvcnk=" data-listing-date-sort="1777824000000" data-listing-file-modified-sort="1778081818700" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<a href="./posts/story/diary/diary_00/diary_00.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/story/diary/diary_00/images/cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+2026-05-04 随笔
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnk='); return false;">Story</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>不喝酒也要Cynicism了是吧</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-05-04
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="UmVzZWFyY2glMkNHYW1pbmc=" data-listing-date-sort="1776614400000" data-listing-file-modified-sort="1778252106973" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<a href="./posts/research/secret_sealing_club/no_existence.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/research/secret_sealing_club/GFC_cover.jpg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+秘封为什么难以复制？
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+</div>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=50]:posts/research/secret_sealing_club/no_existence.html -->
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-04-20
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="14" data-listing-date-sort="1776528000000" data-listing-file-modified-sort="1778333744554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="960">
+<a href="./posts/gaming/draft/Nine_sols_like_Observation_Log.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/gaming/draft/imago_iterata_cover.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Observation Log: Imago Iterata
+</h5>
+<div class="card-text listing-description delink">
+<p>An in-depth analysis of the paradoxical…</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-04-19
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="15" data-categories="R2FtaW5nJTJDQW5hbHlzaXM=" data-listing-date-sort="1776009600000" data-listing-file-modified-sort="1778080035434" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<a href="./posts/research/guilty_gear/asuka.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/research/guilty_gear/asuka_cover.jpg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Gravity hold all the answers
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXM='); return false;">Analysis</div>
+
+</div>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=50]:posts/research/guilty_gear/asuka.html -->
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-04-13
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="16" data-categories="U2NpZmk=" data-listing-date-sort="1775404800000" data-listing-file-modified-sort="1778081760275" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<a href="./posts/scifi/EnJoe_Toh/Self_Reference_Engine.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/scifi/EnJoe_Toh/EnJoe_Toh.jpeg" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+圆城塔的散文随笔
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2NpZmk='); return false;">Scifi</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>小时候看这集被巨型智慧当傻子了</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-04-06
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="17" data-categories="UmVzZWFyY2glMkNHYW1pbmclMkNBbmFseXNpcyUyQ0Vsc3dvcmQ=" data-listing-date-sort="1774454400000" data-listing-file-modified-sort="1778334152819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
+<a href="./posts/research/elsword_clamor_analysis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/research/elsword_clamor_analysis/all_nonsense.png" class="thumbnail-image card-img" style="height: 220px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+从俄耳甫斯到赫耳墨斯
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2FtaW5n'); return false;">Gaming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXM='); return false;">Analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RWxzd29yZA=='); return false;">Elsword</div>
+
+</div>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=50]:posts/research/elsword_clamor_analysis/index.html -->
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2026-03-26
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">无匹配项</div>
+</div><button id="back-to-top" aria-label="返回顶部" title="返回顶部">
   <i class="bi bi-chevron-up"></i>
-</button><script defer="" src="https://cloud.umami.is/script.js" data-website-id="3251b22b-3946-4f1c-82b0-742fd91789cd"></script></main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="/ask.html" class="about-link" rel="" target="">
-    <i class="bi bi-chat-square-dots"></i>
-     <span class="about-link-text">Ask me</span>
-  </a>
-  <a href="mailto:GreenwichintheSky@outlook.com" class="about-link" rel="" target="">
-    <i class="bi bi-microsoft"></i>
-     <span class="about-link-text">Outlook</span>
-  </a>
-  <a href="/index.xml" class="about-link" rel="" target="">
-    <i class="bi bi-rss"></i>
-     <span class="about-link-text">RSS</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+</button><script defer="" src="https://cloud.umami.is/script.js" data-website-id="3251b22b-3946-4f1c-82b0-742fd91789cd"></script></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -352,6 +924,13 @@ ul.task-list li input[type="checkbox"] {
       window.document.body.appendChild(a);
     }
     setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

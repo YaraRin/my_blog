@@ -4,51 +4,29 @@
 </button>
 
 <script>
-// ── 返回顶部 ──
+// 返回顶部：滚动监听仅在下一帧更新，避免重复触发布局工作。
 (function () {
   const btn = document.getElementById('back-to-top');
   if (!btn) return;
 
+  let scheduled = false;
+
+  function updateVisibility() {
+    btn.classList.toggle('visible', window.scrollY > 300);
+    scheduled = false;
+  }
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      btn.classList.add('visible');
-    } else {
-      btn.classList.remove('visible');
-    }
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(updateVisibility);
   }, { passive: true });
 
   btn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
   });
-})();
-
-// ── 目录高亮跟随 ──
-(function () {
-  const tocLinks = document.querySelectorAll('#TOC .nav-link');
-  if (!tocLinks.length) return;
-
-  const headings = Array.from(
-    document.querySelectorAll('h2[id], h3[id], h4[id]')
-  );
-
-  function updateActive() {
-    const scrollY = window.scrollY + 100;
-    let current = headings[0];
-
-    for (const h of headings) {
-      if (h.offsetTop <= scrollY) current = h;
-    }
-
-    tocLinks.forEach(link => {
-      link.classList.remove('active');
-      if (current && link.getAttribute('href') === '#' + current.id) {
-        link.classList.add('active');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', updateActive, { passive: true });
-  updateActive();
+  updateVisibility();
 })();
 </script>
 

@@ -2,12 +2,6 @@
   "listingMap": {
     "index.qmd": [
       "posts"
-    ],
-    "posts\\gaming\\demo_draft\\celestia_archive_script_fixed.qmd": [
-      "../../../posts"
-    ],
-    "posts\\gaming\\meta_demo\\log_00.qmd": [
-      "../../../posts"
     ]
   }
 }

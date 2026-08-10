@@ -18,7 +18,7 @@ website:
       - text: "Research"
         href: "index.qmd#category=Research"
       - text: "Story"
-        href: "index.qmd#category=story"
+        href: "index.qmd#category=Story"
     right:
       - text: "About"
         href: about.qmd
@@ -28,8 +28,12 @@ website:
       - icon: envelope
         href: mailto:GreenwichintheSky@outlook.com
 
-  # 页脚注入返回顶部按钮 + 目录高亮 JS
+  # 页脚注入返回顶部按钮与访客统计
   body-footer: custom.html
+
+  page-footer:
+    border: true
+    center: "A Small Stage · Personal research archive"
 
 format:
   html:
@@ -48,7 +52,6 @@ format:
     css: styles.css
     toc: true
     toc-title: "目录"
-    reading-time: true
     code-fold: true
     code-summary: "展开查看代码"
     code-copy: true
@@ -66,18 +69,5 @@ format:
           light: light
           dark: dark
         language: zh-CN
-
-listing:
-  contents: posts
-  type: grid           
-  grid-columns: 3      
-  image-height: 220px  
-  grid-item-border: false 
-  grid-item-align: left
-  fields: [image, title, date, reading-time, categories, description]
-  sort: "date desc"
-  categories: true
-  max-description-length: 50
-  feed: true
 
 lang: zh

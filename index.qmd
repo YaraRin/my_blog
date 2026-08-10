@@ -1,26 +1,25 @@
 ---
-title: "摸鱼DJ| 谁有多余的时间 "
+title: "A Small Stage"
 subtitle: '"The Earth is a very small stage in a vast cosmic arena."'
 listing:
   contents: posts
   sort: "date desc"
   type: grid
+  grid-columns: 3
+  image-height: 220px
+  grid-item-border: false
+  grid-item-align: left
+  fields: [image, title, date, categories, description]
   categories: true
+  max-description-length: 50
   feed: true
 format:
   html:
     margin-header: |
-      <div style="text-align: center; border-bottom: 1px solid #dee2e6; padding-bottom: 15px; margin-bottom: 15px;">
-        <img src="profile.png" style="border-radius: 50%; width: 75px; margin-bottom: 10px;">
-        <div style="font-weight: 600; font-size: 1.1em; letter-spacing: 1px;">YARA</div>
-        <div style="margin-top: 12px; display: flex; justify-content: center; gap: 15px;">
-        <a href="ask.qmd" style="color: #333; text-decoration: none;" title="Ask me"><i class="bi bi-chat-square-dots"></i></a>
-        <a href="mailto:GreenwichintheSky@outlook.com" style="color: #333; text-decoration: none;"><i class="bi bi-envelope-at"></i></a>
-        <a href="/index.xml" title="RSS Feed" style="color: #333; text-decoration: none;">
-          <i class="bi bi-rss" style="font-size: 1.1rem;"></i>
-        </a>
-        <a href="/about.qmd" style="color: #333; text-decoration: none;"><i class="bi bi-person-circle"></i></a>
-        </div>
+      <div class="stage-profile">
+        <img src="profile.png" alt="Yara" class="stage-profile__avatar">
+        <div class="stage-profile__name">YARA</div>
+        <div class="stage-profile__links"><a href="ask.html" title="Ask me" aria-label="Ask me"><i class="bi bi-chat-square-dots"></i></a><a href="mailto:GreenwichintheSky@outlook.com" title="Email" aria-label="Email"><i class="bi bi-envelope-at"></i></a><a href="index.xml" title="RSS Feed" aria-label="RSS Feed"><i class="bi bi-rss"></i></a><a href="about.html" title="About" aria-label="About"><i class="bi bi-person-circle"></i></a></div>
       </div>
 
 ---
