@@ -1,11 +1,12 @@
 ---
 title: "当为你好成为另一种支配"
 author: "Yara"
-image:images/cover.png
-date: 2026-08-24
-categories: [Gaming,Research,Shadowverse]
+image: "images/cover.png"
+date: "2026-08-24"
+categories: [Gaming, Shadowverse]
 description: "看来真和过去告别了"
 ---
+
 
 > 本文涉及《八狱魔境・阿兹弗特》与《Revenants of Azvaldt》的完整人物关系及剧情设定。
 
