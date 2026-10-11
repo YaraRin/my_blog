@@ -4,7 +4,8 @@ author: "Yara"
 date: "2026-10-11"
 categories: [Story, Gaming]
 description: "原本只是想借助 AI 练手，结果又绕回了创作和设计本身。"
-draft: true
+draft: false
+image: "cover.png"
 ---
 
 最近折腾了两个项目，一个是大约 30 秒的 MV，另一个是 Balatro 的同人 MOD。原本都觉得可以借助 AI 降低制作门槛，结果折腾了一段时间，发现事情好像没那么简单。
