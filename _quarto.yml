@@ -28,18 +28,12 @@ website:
       - icon: envelope
         href: mailto:GreenwichintheSky@outlook.com
 
-  # 页脚注入返回顶部按钮与访客统计
-  body-footer: custom.html
-
   page-footer:
     border: true
     center: "A Small Stage · Personal research archive"
 
 format:
   html:
-    include-in-header:
-      text: |
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
     theme:
       light: cosmo
       dark: darkly

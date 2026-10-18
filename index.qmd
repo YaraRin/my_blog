@@ -1,29 +1,17 @@
 ---
 title: "A Small Stage"
-subtitle: '"The Earth is a very small stage in a vast cosmic arena."'
+subtitle: "关于游戏、叙事与研究的个人记录。"
+page-layout: article
+toc: false
+body-classes: stage-home
 listing:
   contents: posts
   sort: "date desc"
-  type: grid
-  grid-columns: 3
-  image-height: 220px
-  grid-item-border: false
-  grid-item-align: left
-  fields: [image, title, date, categories, description]
+  type: default
+  fields: [date, title, categories, description]
   categories: true
-  max-description-length: 50
+  max-description-length: 120
   feed: true
-format:
-  html:
-    margin-header: |
-      <div class="stage-profile">
-        <img src="profile.png" alt="Yara" class="stage-profile__avatar">
-        <div class="stage-profile__name">YARA</div>
-        <div class="stage-profile__links"><a href="ask.html" title="Ask me" aria-label="Ask me"><i class="bi bi-chat-square-dots"></i></a><a href="mailto:GreenwichintheSky@outlook.com" title="Email" aria-label="Email"><i class="bi bi-envelope-at"></i></a><a href="index.xml" title="RSS Feed" aria-label="RSS Feed"><i class="bi bi-rss"></i></a><a href="about.html" title="About" aria-label="About"><i class="bi bi-person-circle"></i></a></div>
-      </div>
-
 ---
 
-> 位我上者，灿烂星空；道德律令，付与清风~
-
----
+[订阅 RSS](index.xml){.stage-feed}
